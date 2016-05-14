@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Исходное имя файла:
-// Дата создания: 12.03.2016 18:58:04
+// Дата создания: 14.05.2016 20:36:33
 namespace LightSwitchApplication.Implementation
 {
     
@@ -61,6 +61,23 @@ namespace LightSwitchApplication.Implementation
             return null;
         }
         /// <summary>
+        /// В схеме отсутствуют комментарии для ClientSet.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Client> ClientSet
+        {
+            get
+            {
+                if ((this._ClientSet == null))
+                {
+                    this._ClientSet = base.CreateQuery<Client>("ClientSet");
+                }
+                return this._ClientSet;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Client> _ClientSet;
+        /// <summary>
         /// В схеме отсутствуют комментарии для RoomSet.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -78,22 +95,22 @@ namespace LightSwitchApplication.Implementation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<Room> _RoomSet;
         /// <summary>
-        /// В схеме отсутствуют комментарии для ClientSet.
+        /// В схеме отсутствуют комментарии для RoomTypeSet.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Client> ClientSet
+        public global::System.Data.Services.Client.DataServiceQuery<RoomType> RoomTypeSet
         {
             get
             {
-                if ((this._ClientSet == null))
+                if ((this._RoomTypeSet == null))
                 {
-                    this._ClientSet = base.CreateQuery<Client>("ClientSet");
+                    this._RoomTypeSet = base.CreateQuery<RoomType>("RoomTypeSet");
                 }
-                return this._ClientSet;
+                return this._RoomTypeSet;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Client> _ClientSet;
+        private global::System.Data.Services.Client.DataServiceQuery<RoomType> _RoomTypeSet;
         /// <summary>
         /// В схеме отсутствуют комментарии для SettlementSet.
         /// </summary>
@@ -129,22 +146,13 @@ namespace LightSwitchApplication.Implementation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<Sex> _SexSet;
         /// <summary>
-        /// В схеме отсутствуют комментарии для RoomTypeSet.
+        /// В схеме отсутствуют комментарии для ClientSet.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<RoomType> RoomTypeSet
+        public void AddToClientSet(Client client)
         {
-            get
-            {
-                if ((this._RoomTypeSet == null))
-                {
-                    this._RoomTypeSet = base.CreateQuery<RoomType>("RoomTypeSet");
-                }
-                return this._RoomTypeSet;
-            }
+            base.AddObject("ClientSet", client);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<RoomType> _RoomTypeSet;
         /// <summary>
         /// В схеме отсутствуют комментарии для RoomSet.
         /// </summary>
@@ -154,12 +162,12 @@ namespace LightSwitchApplication.Implementation
             base.AddObject("RoomSet", room);
         }
         /// <summary>
-        /// В схеме отсутствуют комментарии для ClientSet.
+        /// В схеме отсутствуют комментарии для RoomTypeSet.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToClientSet(Client client)
+        public void AddToRoomTypeSet(RoomType roomType)
         {
-            base.AddObject("ClientSet", client);
+            base.AddObject("RoomTypeSet", roomType);
         }
         /// <summary>
         /// В схеме отсутствуют комментарии для SettlementSet.
@@ -177,14 +185,6 @@ namespace LightSwitchApplication.Implementation
         {
             base.AddObject("SexSet", sex);
         }
-        /// <summary>
-        /// В схеме отсутствуют комментарии для RoomTypeSet.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToRoomTypeSet(RoomType roomType)
-        {
-            base.AddObject("RoomTypeSet", roomType);
-        }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private abstract class GeneratedEdmModel
         {
@@ -196,97 +196,97 @@ namespace LightSwitchApplication.Implementation
                 "ices/metadata\" m:DataServiceVersion=\"1.0\" m:MaxDataServiceVersion=\"3.0\"><Schema " +
                 "xmlns:annotation=\"http://schemas.microsoft.com/ado/2009/02/edm/annotation\" Names" +
                 "pace=\"LightSwitchApplication\" Alias=\"Self\" xmlns=\"http://schemas.microsoft.com/a" +
-                "do/2008/09/edm\"><EntityType Name=\"Room\"><Key><PropertyRef Name=\"Id\" /></Key><Pro" +
-                "perty Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPatte" +
-                "rn=\"Identity\" /><Property Name=\"NofBeds\" Type=\"Edm.Int32\" Nullable=\"false\" /><Pr" +
-                "operty Name=\"Cost\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"18\" Scale=\"2\" " +
-                "/><Property Name=\"Room_RoomType\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property N" +
-                "ame=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Typ" +
-                "e=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength" +
-                "=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"R" +
-                "owVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation" +
-                ":StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"RoomType\" Relation" +
-                "ship=\"LightSwitchApplication.Room_RoomType\" ToRole=\"RoomType\" FromRole=\"Room\" />" +
-                "<NavigationProperty Name=\"SettlementCollection\" Relationship=\"LightSwitchApplica" +
-                "tion.Settlement_Room\" ToRole=\"Settlement\" FromRole=\"Room\" /></EntityType><Entity" +
-                "Type Name=\"Client\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=" +
-                "\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Prop" +
-                "erty Name=\"Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property " +
-                "Name=\"S_Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Nam" +
-                "e=\"Passport\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name" +
-                "=\"Phone\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Ad" +
-                "ress\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"Birth" +
-                "day\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"Client_Sex\" Type=\"Ed" +
-                "m.Int32\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLeng" +
-                "th=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"" +
-                "ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"" +
-                "Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"fa" +
-                "lse\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Navi" +
-                "gationProperty Name=\"IdSex\" Relationship=\"LightSwitchApplication.Client_Sex\" ToR" +
-                "ole=\"Sex\" FromRole=\"Client\" /><NavigationProperty Name=\"SettlementCollection\" Re" +
-                "lationship=\"LightSwitchApplication.Settlement_Client\" ToRole=\"Settlement\" FromRo" +
-                "le=\"Client\" /></EntityType><EntityType Name=\"Settlement\"><Key><PropertyRef Name=" +
-                "\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:St" +
-                "oreGeneratedPattern=\"Identity\" /><Property Name=\"Joined\" Type=\"Edm.DateTime\" Nul" +
-                "lable=\"false\" /><Property Name=\"Eviction\" Type=\"Edm.DateTime\" Nullable=\"false\" /" +
-                "><Property Name=\"Settlement_Client\" Type=\"Edm.Int32\" Nullable=\"false\" /><Propert" +
-                "y Name=\"Settlement_Room\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Cre" +
-                "atedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.D" +
-                "ateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /" +
-                "><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersio" +
-                "n\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGe" +
-                "neratedPattern=\"Computed\" /><NavigationProperty Name=\"IdClient\" Relationship=\"Li" +
-                "ghtSwitchApplication.Settlement_Client\" ToRole=\"Client\" FromRole=\"Settlement\" />" +
-                "<NavigationProperty Name=\"IdRoom\" Relationship=\"LightSwitchApplication.Settlemen" +
-                "t_Room\" ToRole=\"Room\" FromRole=\"Settlement\" /></EntityType><EntityType Name=\"Sex" +
-                "\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nulla" +
-                "ble=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Name\" " +
-                "Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" " +
-                "Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeO" +
-                "ffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Proper" +
-                "ty Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=" +
-                "\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedP" +
-                "attern=\"Computed\" /><NavigationProperty Name=\"ClientCollection\" Relationship=\"Li" +
-                "ghtSwitchApplication.Client_Sex\" ToRole=\"Client\" FromRole=\"Sex\" /></EntityType><" +
-                "EntityType Name=\"RoomType\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"I" +
-                "d\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\"" +
-                " /><Property Name=\"Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" /><P" +
-                "roperty Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Cre" +
-                "ated\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" " +
-                "MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Propert" +
-                "y Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" a" +
-                "nnotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"RoomColle" +
-                "ction\" Relationship=\"LightSwitchApplication.Room_RoomType\" ToRole=\"Room\" FromRol" +
-                "e=\"RoomType\" /></EntityType><Association Name=\"Client_Sex\"><End Role=\"Sex\" Type=" +
-                "\"LightSwitchApplication.Sex\" Multiplicity=\"1\" /><End Role=\"Client\" Type=\"LightSw" +
-                "itchApplication.Client\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Rol" +
-                "e=\"Sex\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Client\"><PropertyR" +
-                "ef Name=\"Client_Sex\" /></Dependent></ReferentialConstraint></Association><Associ" +
-                "ation Name=\"Room_RoomType\"><End Role=\"RoomType\" Type=\"LightSwitchApplication.Roo" +
-                "mType\" Multiplicity=\"1\" /><End Role=\"Room\" Type=\"LightSwitchApplication.Room\" Mu" +
-                "ltiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"RoomType\"><PropertyRef " +
-                "Name=\"Id\" /></Principal><Dependent Role=\"Room\"><PropertyRef Name=\"Room_RoomType\"" +
-                " /></Dependent></ReferentialConstraint></Association><Association Name=\"Settleme" +
-                "nt_Client\"><End Role=\"Client\" Type=\"LightSwitchApplication.Client\" Multiplicity=" +
-                "\"1\" /><End Role=\"Settlement\" Type=\"LightSwitchApplication.Settlement\" Multiplici" +
-                "ty=\"*\" /><ReferentialConstraint><Principal Role=\"Client\"><PropertyRef Name=\"Id\" " +
-                "/></Principal><Dependent Role=\"Settlement\"><PropertyRef Name=\"Settlement_Client\"" +
-                " /></Dependent></ReferentialConstraint></Association><Association Name=\"Settleme" +
-                "nt_Room\"><End Role=\"Room\" Type=\"LightSwitchApplication.Room\" Multiplicity=\"1\" />" +
-                "<End Role=\"Settlement\" Type=\"LightSwitchApplication.Settlement\" Multiplicity=\"*\"" +
-                " /><ReferentialConstraint><Principal Role=\"Room\"><PropertyRef Name=\"Id\" /></Prin" +
-                "cipal><Dependent Role=\"Settlement\"><PropertyRef Name=\"Settlement_Room\" /></Depen" +
+                "do/2008/09/edm\"><EntityType Name=\"Client\"><Key><PropertyRef Name=\"Id\" /></Key><P" +
+                "roperty Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPat" +
+                "tern=\"Identity\" /><Property Name=\"Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLe" +
+                "ngth=\"255\" /><Property Name=\"S_Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLengt" +
+                "h=\"255\" /><Property Name=\"Passport\" Type=\"Edm.String\" Nullable=\"false\" MaxLength" +
+                "=\"255\" /><Property Name=\"Phone\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"25" +
+                "5\" /><Property Name=\"Adress\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" " +
+                "/><Property Name=\"Birthday\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Nam" +
+                "e=\"Client_Sex\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Ty" +
+                "pe=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOff" +
+                "set\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property" +
+                " Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"E" +
+                "dm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPat" +
+                "tern=\"Computed\" /><NavigationProperty Name=\"IdSex\" Relationship=\"LightSwitchAppl" +
+                "ication.Client_Sex\" ToRole=\"Sex\" FromRole=\"Client\" /><NavigationProperty Name=\"S" +
+                "ettlementCollection\" Relationship=\"LightSwitchApplication.Settlement_Client\" ToR" +
+                "ole=\"Settlement\" FromRole=\"Client\" /></EntityType><EntityType Name=\"Room\"><Key><" +
+                "PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"fal" +
+                "se\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"NofBeds\" Type=" +
+                "\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Cost\" Type=\"Edm.Decimal\" Nullable" +
+                "=\"false\" Precision=\"18\" Scale=\"2\" /><Property Name=\"Room_RoomType\" Type=\"Edm.Int" +
+                "32\" Nullable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"2" +
+                "55\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Modif" +
+                "iedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.D" +
+                "ateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" " +
+                "ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Navigatio" +
+                "nProperty Name=\"RoomType\" Relationship=\"LightSwitchApplication.Room_RoomType\" To" +
+                "Role=\"RoomType\" FromRole=\"Room\" /><NavigationProperty Name=\"SettlementCollection" +
+                "\" Relationship=\"LightSwitchApplication.Settlement_Room\" ToRole=\"Settlement\" From" +
+                "Role=\"Room\" /></EntityType><EntityType Name=\"RoomType\"><Key><PropertyRef Name=\"I" +
+                "d\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:Stor" +
+                "eGeneratedPattern=\"Identity\" /><Property Name=\"Name\" Type=\"Edm.String\" Nullable=" +
+                "\"false\" MaxLength=\"255\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength" +
+                "=\"255\" /><Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"Mo" +
+                "difiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Ed" +
+                "m.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"fals" +
+                "e\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><Naviga" +
+                "tionProperty Name=\"RoomCollection\" Relationship=\"LightSwitchApplication.Room_Roo" +
+                "mType\" ToRole=\"Room\" FromRole=\"RoomType\" /></EntityType><EntityType Name=\"Settle" +
+                "ment\"><Key><PropertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" N" +
+                "ullable=\"false\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Jo" +
+                "ined\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property Name=\"Eviction\" Type=\"Edm" +
+                ".DateTime\" Nullable=\"false\" /><Property Name=\"Settlement_Client\" Type=\"Edm.Int32" +
+                "\" Nullable=\"false\" /><Property Name=\"Settlement_Room\" Type=\"Edm.Int32\" Nullable=" +
+                "\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Proper" +
+                "ty Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"" +
+                "Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset" +
+                "\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMo" +
+                "de=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Nam" +
+                "e=\"IdClient\" Relationship=\"LightSwitchApplication.Settlement_Client\" ToRole=\"Cli" +
+                "ent\" FromRole=\"Settlement\" /><NavigationProperty Name=\"IdRoom\" Relationship=\"Lig" +
+                "htSwitchApplication.Settlement_Room\" ToRole=\"Room\" FromRole=\"Settlement\" /></Ent" +
+                "ityType><EntityType Name=\"Sex\"><Key><PropertyRef Name=\"Id\" /></Key><Property Nam" +
+                "e=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:StoreGeneratedPattern=\"Ident" +
+                "ity\" /><Property Name=\"Name\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"255\" " +
+                "/><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=" +
+                "\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.Stri" +
+                "ng\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Pro" +
+                "perty Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixe" +
+                "d\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=\"Clien" +
+                "tCollection\" Relationship=\"LightSwitchApplication.Client_Sex\" ToRole=\"Client\" Fr" +
+                "omRole=\"Sex\" /></EntityType><Association Name=\"Settlement_Client\"><End Role=\"Cli" +
+                "ent\" Type=\"LightSwitchApplication.Client\" Multiplicity=\"1\" /><End Role=\"Settleme" +
+                "nt\" Type=\"LightSwitchApplication.Settlement\" Multiplicity=\"*\" /><ReferentialCons" +
+                "traint><Principal Role=\"Client\"><PropertyRef Name=\"Id\" /></Principal><Dependent " +
+                "Role=\"Settlement\"><PropertyRef Name=\"Settlement_Client\" /></Dependent></Referent" +
+                "ialConstraint></Association><Association Name=\"Settlement_Room\"><End Role=\"Room\"" +
+                " Type=\"LightSwitchApplication.Room\" Multiplicity=\"1\" /><End Role=\"Settlement\" Ty" +
+                "pe=\"LightSwitchApplication.Settlement\" Multiplicity=\"*\" /><ReferentialConstraint" +
+                "><Principal Role=\"Room\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Se" +
+                "ttlement\"><PropertyRef Name=\"Settlement_Room\" /></Dependent></ReferentialConstra" +
+                "int></Association><Association Name=\"Room_RoomType\"><End Role=\"RoomType\" Type=\"L" +
+                "ightSwitchApplication.RoomType\" Multiplicity=\"1\" /><End Role=\"Room\" Type=\"LightS" +
+                "witchApplication.Room\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role" +
+                "=\"RoomType\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Room\"><Propert" +
+                "yRef Name=\"Room_RoomType\" /></Dependent></ReferentialConstraint></Association><A" +
+                "ssociation Name=\"Client_Sex\"><End Role=\"Sex\" Type=\"LightSwitchApplication.Sex\" M" +
+                "ultiplicity=\"1\" /><End Role=\"Client\" Type=\"LightSwitchApplication.Client\" Multip" +
+                "licity=\"*\" /><ReferentialConstraint><Principal Role=\"Sex\"><PropertyRef Name=\"Id\"" +
+                " /></Principal><Dependent Role=\"Client\"><PropertyRef Name=\"Client_Sex\" /></Depen" +
                 "dent></ReferentialConstraint></Association><EntityContainer Name=\"ApplicationDat" +
-                "a\" m:IsDefaultEntityContainer=\"true\"><EntitySet Name=\"RoomSet\" EntityType=\"Light" +
-                "SwitchApplication.Room\" /><EntitySet Name=\"ClientSet\" EntityType=\"LightSwitchApp" +
-                "lication.Client\" /><EntitySet Name=\"SettlementSet\" EntityType=\"LightSwitchApplic" +
-                "ation.Settlement\" /><EntitySet Name=\"SexSet\" EntityType=\"LightSwitchApplication." +
-                "Sex\" /><EntitySet Name=\"RoomTypeSet\" EntityType=\"LightSwitchApplication.RoomType" +
-                "\" /><AssociationSet Name=\"Client_Sex\" Association=\"LightSwitchApplication.Client" +
-                "_Sex\"><End Role=\"Sex\" EntitySet=\"SexSet\" /><End Role=\"Client\" EntitySet=\"ClientS" +
-                "et\" /></AssociationSet><AssociationSet Name=\"Room_RoomType\"";
+                "a\" m:IsDefaultEntityContainer=\"true\"><EntitySet Name=\"ClientSet\" EntityType=\"Lig" +
+                "htSwitchApplication.Client\" /><EntitySet Name=\"RoomSet\" EntityType=\"LightSwitchA" +
+                "pplication.Room\" /><EntitySet Name=\"RoomTypeSet\" EntityType=\"LightSwitchApplicat" +
+                "ion.RoomType\" /><EntitySet Name=\"SettlementSet\" EntityType=\"LightSwitchApplicati" +
+                "on.Settlement\" /><EntitySet Name=\"SexSet\" EntityType=\"LightSwitchApplication.Sex" +
+                "\" /><AssociationSet Name=\"Settlement_Client\" Association=\"LightSwitchApplication" +
+                ".Settlement_Client\"><End Role=\"Client\" EntitySet=\"ClientSet\" /><End Role=\"Settle" +
+                "ment\" EntitySet=\"SettlementSet\" /></AssociationSet><Associa";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart1 = @" Association=""LightSwitchApplication.Room_RoomType""><End Role=""RoomType"" EntitySet=""RoomTypeSet"" /><End Role=""Room"" EntitySet=""RoomSet"" /></AssociationSet><AssociationSet Name=""Settlement_Client"" Association=""LightSwitchApplication.Settlement_Client""><End Role=""Client"" EntitySet=""ClientSet"" /><End Role=""Settlement"" EntitySet=""SettlementSet"" /></AssociationSet><AssociationSet Name=""Settlement_Room"" Association=""LightSwitchApplication.Settlement_Room""><End Role=""Room"" EntitySet=""RoomSet"" /><End Role=""Settlement"" EntitySet=""SettlementSet"" /></AssociationSet><FunctionImport Name=""Query1"" ReturnType=""Collection(LightSwitchApplication.Client)"" EntitySet=""ClientSet"" m:HttpMethod=""GET""><Parameter Name=""SexId"" Type=""Edm.Int32"" Mode=""In"" /></FunctionImport><FunctionImport Name=""Query2"" ReturnType=""Collection(LightSwitchApplication.Settlement)"" EntitySet=""SettlementSet"" m:HttpMethod=""GET""><Parameter Name=""IdRoomType"" Type=""Edm.Int32"" Mode=""In"" /></FunctionImport><FunctionImport Name=""Microsoft_LightSwitch_GetCanInformation"" ReturnType=""Edm.String"" m:HttpMethod=""GET""><Parameter Name=""dataServiceMembers"" Type=""Edm.String"" Mode=""In"" /></FunctionImport></EntityContainer></Schema></edmx:DataServices></edmx:Edmx>";
+            private const string ModelPart1 = @"tionSet Name=""Settlement_Room"" Association=""LightSwitchApplication.Settlement_Room""><End Role=""Room"" EntitySet=""RoomSet"" /><End Role=""Settlement"" EntitySet=""SettlementSet"" /></AssociationSet><AssociationSet Name=""Room_RoomType"" Association=""LightSwitchApplication.Room_RoomType""><End Role=""RoomType"" EntitySet=""RoomTypeSet"" /><End Role=""Room"" EntitySet=""RoomSet"" /></AssociationSet><AssociationSet Name=""Client_Sex"" Association=""LightSwitchApplication.Client_Sex""><End Role=""Sex"" EntitySet=""SexSet"" /><End Role=""Client"" EntitySet=""ClientSet"" /></AssociationSet><FunctionImport Name=""Query1"" ReturnType=""Collection(LightSwitchApplication.Client)"" EntitySet=""ClientSet"" m:HttpMethod=""GET""><Parameter Name=""SexId"" Type=""Edm.Int32"" Mode=""In"" /></FunctionImport><FunctionImport Name=""Query2"" ReturnType=""Collection(LightSwitchApplication.Settlement)"" EntitySet=""SettlementSet"" m:HttpMethod=""GET""><Parameter Name=""IdRoomType"" Type=""Edm.Int32"" Mode=""In"" /></FunctionImport><FunctionImport Name=""Microsoft_LightSwitch_GetCanInformation"" ReturnType=""Edm.String"" m:HttpMethod=""GET""><Parameter Name=""dataServiceMembers"" Type=""Edm.String"" Mode=""In"" /></FunctionImport></EntityContainer></Schema></edmx:DataServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {
@@ -315,353 +315,6 @@ namespace LightSwitchApplication.Implementation
             private static global::System.Xml.XmlReader CreateXmlReader(string edmxToParse)
             {
                 return global::System.Xml.XmlReader.Create(new global::System.IO.StringReader(edmxToParse));
-            }
-        }
-    }
-    /// <summary>
-    /// В схеме отсутствуют комментарии для LightSwitchApplication.Room.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("RoomSet")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("Id")]
-    public partial class Room : global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityBase, global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Создайте новый объект Room.
-        /// </summary>
-        /// <param name="ID">Начальное значение Id.</param>
-        /// <param name="nofBeds">Начальное значение NofBeds.</param>
-        /// <param name="cost">Начальное значение Cost.</param>
-        /// <param name="room_RoomType">Начальное значение Room_RoomType.</param>
-        /// <param name="rowVersion">Начальное значение RowVersion.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Room CreateRoom(int ID, int nofBeds, decimal cost, int room_RoomType, byte[] rowVersion)
-        {
-            Room room = new Room();
-            room.Id = ID;
-            room.NofBeds = nofBeds;
-            room.Cost = cost;
-            room.Room_RoomType = room_RoomType;
-            room.RowVersion = rowVersion;
-            return room;
-        }
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Id.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int Id
-        {
-            get
-            {
-                return this._Id;
-            }
-            set
-            {
-                this.OnIdChanging(value);
-                if (object.Equals(this.Id, value))
-                {
-                    return;
-                }
-                this._Id = value;
-                this.OnIdChanged();
-                this.OnPropertyChanged("Id");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _Id;
-        partial void OnIdChanging(int value);
-        partial void OnIdChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства NofBeds.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int NofBeds
-        {
-            get
-            {
-                return this._NofBeds;
-            }
-            set
-            {
-                this.OnNofBedsChanging(value);
-                if (object.Equals(this.NofBeds, value))
-                {
-                    return;
-                }
-                this._NofBeds = value;
-                this.OnNofBedsChanged();
-                this.OnPropertyChanged("NofBeds");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _NofBeds;
-        partial void OnNofBedsChanging(int value);
-        partial void OnNofBedsChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Cost.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public decimal Cost
-        {
-            get
-            {
-                return this._Cost;
-            }
-            set
-            {
-                this.OnCostChanging(value);
-                if (object.Equals(this.Cost, value))
-                {
-                    return;
-                }
-                this._Cost = value;
-                this.OnCostChanged();
-                this.OnPropertyChanged("Cost");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private decimal _Cost;
-        partial void OnCostChanging(decimal value);
-        partial void OnCostChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Room_RoomType.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int Room_RoomType
-        {
-            get
-            {
-                return this._Room_RoomType;
-            }
-            set
-            {
-                this.OnRoom_RoomTypeChanging(value);
-                if (object.Equals(this.Room_RoomType, value))
-                {
-                    return;
-                }
-                this._Room_RoomType = value;
-                this.OnRoom_RoomTypeChanged();
-                this.OnPropertyChanged("Room_RoomType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _Room_RoomType;
-        partial void OnRoom_RoomTypeChanging(int value);
-        partial void OnRoom_RoomTypeChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства CreatedBy.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string CreatedBy
-        {
-            get
-            {
-                return this._CreatedBy;
-            }
-            set
-            {
-                this.OnCreatedByChanging(value);
-                if (object.Equals(this.CreatedBy, value))
-                {
-                    return;
-                }
-                this._CreatedBy = value;
-                this.OnCreatedByChanged();
-                this.OnPropertyChanged("CreatedBy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _CreatedBy;
-        partial void OnCreatedByChanging(string value);
-        partial void OnCreatedByChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Created.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTimeOffset> Created
-        {
-            get
-            {
-                return this._Created;
-            }
-            set
-            {
-                this.OnCreatedChanging(value);
-                if (object.Equals(this.Created, value))
-                {
-                    return;
-                }
-                this._Created = value;
-                this.OnCreatedChanged();
-                this.OnPropertyChanged("Created");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _Created;
-        partial void OnCreatedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnCreatedChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства ModifiedBy.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string ModifiedBy
-        {
-            get
-            {
-                return this._ModifiedBy;
-            }
-            set
-            {
-                this.OnModifiedByChanging(value);
-                if (object.Equals(this.ModifiedBy, value))
-                {
-                    return;
-                }
-                this._ModifiedBy = value;
-                this.OnModifiedByChanged();
-                this.OnPropertyChanged("ModifiedBy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _ModifiedBy;
-        partial void OnModifiedByChanging(string value);
-        partial void OnModifiedByChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Modified.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTimeOffset> Modified
-        {
-            get
-            {
-                return this._Modified;
-            }
-            set
-            {
-                this.OnModifiedChanging(value);
-                if (object.Equals(this.Modified, value))
-                {
-                    return;
-                }
-                this._Modified = value;
-                this.OnModifiedChanged();
-                this.OnPropertyChanged("Modified");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _Modified;
-        partial void OnModifiedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnModifiedChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства RowVersion.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public byte[] RowVersion
-        {
-            get
-            {
-                if ((this._RowVersion != null))
-                {
-                    return ((byte[])(this._RowVersion.Clone()));
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            set
-            {
-                this.OnRowVersionChanging(value);
-                if (object.Equals(this.RowVersion, value))
-                {
-                    return;
-                }
-                this._RowVersion = value;
-                this.OnRowVersionChanged();
-                this.OnPropertyChanged("RowVersion");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private byte[] _RowVersion;
-        partial void OnRowVersionChanging(byte[] value);
-        partial void OnRowVersionChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для RoomType.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public RoomType RoomType
-        {
-            get
-            {
-                this.@__RoomType.EnsureValueInitialized();
-                return this._RoomType;
-            }
-            set
-            {
-                RoomType previous = this.RoomType;
-                if ((previous == value))
-                {
-                    return;
-                }
-                if ((previous != null))
-                {
-                    this._RoomType = null;
-                    this.@__RoomType.OnValueSet();
-                    previous.RoomCollection.Remove(this);
-                }
-                if ((this.___Host != null))
-                {
-                    if ((value != null))
-                    {
-                        this.Room_RoomType = value.Id;
-                    }
-                    else
-                    {
-                        this.Room_RoomType = default(int);
-                    }
-                }
-                this._RoomType = value;
-                this.@__RoomType.OnValueSet();
-                if ((value != null))
-                {
-                    value.@__RoomCollection.Add(this);
-                }
-                this.___OnPropertyChanged("RoomType");
-                this.OnPropertyChanged("RoomType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private RoomType _RoomType;
-        /// <summary>
-        /// В схеме отсутствуют комментарии для SettlementCollection.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceCollection<Settlement> SettlementCollection
-        {
-            get
-            {
-                this.@__SettlementCollection.EnsureValueInitialized();
-                return this._SettlementCollection;
-            }
-            set
-            {
-                this._SettlementCollection = value;
-                this.OnPropertyChanged("SettlementCollection");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceCollection<Settlement> _SettlementCollection = new global::System.Data.Services.Client.DataServiceCollection<Settlement>(null, global::System.Data.Services.Client.TrackingMode.None);
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
             }
         }
     }
@@ -1113,6 +766,597 @@ namespace LightSwitchApplication.Implementation
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceCollection<Settlement> _SettlementCollection = new global::System.Data.Services.Client.DataServiceCollection<Settlement>(null, global::System.Data.Services.Client.TrackingMode.None);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// В схеме отсутствуют комментарии для LightSwitchApplication.Room.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("RoomSet")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("Id")]
+    public partial class Room : global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityBase, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Создайте новый объект Room.
+        /// </summary>
+        /// <param name="ID">Начальное значение Id.</param>
+        /// <param name="nofBeds">Начальное значение NofBeds.</param>
+        /// <param name="cost">Начальное значение Cost.</param>
+        /// <param name="room_RoomType">Начальное значение Room_RoomType.</param>
+        /// <param name="rowVersion">Начальное значение RowVersion.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Room CreateRoom(int ID, int nofBeds, decimal cost, int room_RoomType, byte[] rowVersion)
+        {
+            Room room = new Room();
+            room.Id = ID;
+            room.NofBeds = nofBeds;
+            room.Cost = cost;
+            room.Room_RoomType = room_RoomType;
+            room.RowVersion = rowVersion;
+            return room;
+        }
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Id.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                if (object.Equals(this.Id, value))
+                {
+                    return;
+                }
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _Id;
+        partial void OnIdChanging(int value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства NofBeds.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int NofBeds
+        {
+            get
+            {
+                return this._NofBeds;
+            }
+            set
+            {
+                this.OnNofBedsChanging(value);
+                if (object.Equals(this.NofBeds, value))
+                {
+                    return;
+                }
+                this._NofBeds = value;
+                this.OnNofBedsChanged();
+                this.OnPropertyChanged("NofBeds");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _NofBeds;
+        partial void OnNofBedsChanging(int value);
+        partial void OnNofBedsChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Cost.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public decimal Cost
+        {
+            get
+            {
+                return this._Cost;
+            }
+            set
+            {
+                this.OnCostChanging(value);
+                if (object.Equals(this.Cost, value))
+                {
+                    return;
+                }
+                this._Cost = value;
+                this.OnCostChanged();
+                this.OnPropertyChanged("Cost");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private decimal _Cost;
+        partial void OnCostChanging(decimal value);
+        partial void OnCostChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Room_RoomType.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int Room_RoomType
+        {
+            get
+            {
+                return this._Room_RoomType;
+            }
+            set
+            {
+                this.OnRoom_RoomTypeChanging(value);
+                if (object.Equals(this.Room_RoomType, value))
+                {
+                    return;
+                }
+                this._Room_RoomType = value;
+                this.OnRoom_RoomTypeChanged();
+                this.OnPropertyChanged("Room_RoomType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _Room_RoomType;
+        partial void OnRoom_RoomTypeChanging(int value);
+        partial void OnRoom_RoomTypeChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства CreatedBy.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string CreatedBy
+        {
+            get
+            {
+                return this._CreatedBy;
+            }
+            set
+            {
+                this.OnCreatedByChanging(value);
+                if (object.Equals(this.CreatedBy, value))
+                {
+                    return;
+                }
+                this._CreatedBy = value;
+                this.OnCreatedByChanged();
+                this.OnPropertyChanged("CreatedBy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _CreatedBy;
+        partial void OnCreatedByChanging(string value);
+        partial void OnCreatedByChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Created.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return this._Created;
+            }
+            set
+            {
+                this.OnCreatedChanging(value);
+                if (object.Equals(this.Created, value))
+                {
+                    return;
+                }
+                this._Created = value;
+                this.OnCreatedChanged();
+                this.OnPropertyChanged("Created");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства ModifiedBy.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string ModifiedBy
+        {
+            get
+            {
+                return this._ModifiedBy;
+            }
+            set
+            {
+                this.OnModifiedByChanging(value);
+                if (object.Equals(this.ModifiedBy, value))
+                {
+                    return;
+                }
+                this._ModifiedBy = value;
+                this.OnModifiedByChanged();
+                this.OnPropertyChanged("ModifiedBy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _ModifiedBy;
+        partial void OnModifiedByChanging(string value);
+        partial void OnModifiedByChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Modified.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return this._Modified;
+            }
+            set
+            {
+                this.OnModifiedChanging(value);
+                if (object.Equals(this.Modified, value))
+                {
+                    return;
+                }
+                this._Modified = value;
+                this.OnModifiedChanged();
+                this.OnPropertyChanged("Modified");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства RowVersion.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] RowVersion
+        {
+            get
+            {
+                if ((this._RowVersion != null))
+                {
+                    return ((byte[])(this._RowVersion.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnRowVersionChanging(value);
+                if (object.Equals(this.RowVersion, value))
+                {
+                    return;
+                }
+                this._RowVersion = value;
+                this.OnRowVersionChanged();
+                this.OnPropertyChanged("RowVersion");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _RowVersion;
+        partial void OnRowVersionChanging(byte[] value);
+        partial void OnRowVersionChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для RoomType.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public RoomType RoomType
+        {
+            get
+            {
+                this.@__RoomType.EnsureValueInitialized();
+                return this._RoomType;
+            }
+            set
+            {
+                RoomType previous = this.RoomType;
+                if ((previous == value))
+                {
+                    return;
+                }
+                if ((previous != null))
+                {
+                    this._RoomType = null;
+                    this.@__RoomType.OnValueSet();
+                    previous.RoomCollection.Remove(this);
+                }
+                if ((this.___Host != null))
+                {
+                    if ((value != null))
+                    {
+                        this.Room_RoomType = value.Id;
+                    }
+                    else
+                    {
+                        this.Room_RoomType = default(int);
+                    }
+                }
+                this._RoomType = value;
+                this.@__RoomType.OnValueSet();
+                if ((value != null))
+                {
+                    value.@__RoomCollection.Add(this);
+                }
+                this.___OnPropertyChanged("RoomType");
+                this.OnPropertyChanged("RoomType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private RoomType _RoomType;
+        /// <summary>
+        /// В схеме отсутствуют комментарии для SettlementCollection.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceCollection<Settlement> SettlementCollection
+        {
+            get
+            {
+                this.@__SettlementCollection.EnsureValueInitialized();
+                return this._SettlementCollection;
+            }
+            set
+            {
+                this._SettlementCollection = value;
+                this.OnPropertyChanged("SettlementCollection");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceCollection<Settlement> _SettlementCollection = new global::System.Data.Services.Client.DataServiceCollection<Settlement>(null, global::System.Data.Services.Client.TrackingMode.None);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// В схеме отсутствуют комментарии для LightSwitchApplication.RoomType.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("RoomTypeSet")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("Id")]
+    public partial class RoomType : global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityBase, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Создайте новый объект RoomType.
+        /// </summary>
+        /// <param name="ID">Начальное значение Id.</param>
+        /// <param name="name">Начальное значение Name.</param>
+        /// <param name="rowVersion">Начальное значение RowVersion.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static RoomType CreateRoomType(int ID, string name, byte[] rowVersion)
+        {
+            RoomType roomType = new RoomType();
+            roomType.Id = ID;
+            roomType.Name = name;
+            roomType.RowVersion = rowVersion;
+            return roomType;
+        }
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Id.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                if (object.Equals(this.Id, value))
+                {
+                    return;
+                }
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _Id;
+        partial void OnIdChanging(int value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Name.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                if (object.Equals(this.Name, value))
+                {
+                    return;
+                }
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства CreatedBy.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string CreatedBy
+        {
+            get
+            {
+                return this._CreatedBy;
+            }
+            set
+            {
+                this.OnCreatedByChanging(value);
+                if (object.Equals(this.CreatedBy, value))
+                {
+                    return;
+                }
+                this._CreatedBy = value;
+                this.OnCreatedByChanged();
+                this.OnPropertyChanged("CreatedBy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _CreatedBy;
+        partial void OnCreatedByChanging(string value);
+        partial void OnCreatedByChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Created.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return this._Created;
+            }
+            set
+            {
+                this.OnCreatedChanging(value);
+                if (object.Equals(this.Created, value))
+                {
+                    return;
+                }
+                this._Created = value;
+                this.OnCreatedChanged();
+                this.OnPropertyChanged("Created");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства ModifiedBy.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string ModifiedBy
+        {
+            get
+            {
+                return this._ModifiedBy;
+            }
+            set
+            {
+                this.OnModifiedByChanging(value);
+                if (object.Equals(this.ModifiedBy, value))
+                {
+                    return;
+                }
+                this._ModifiedBy = value;
+                this.OnModifiedByChanged();
+                this.OnPropertyChanged("ModifiedBy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _ModifiedBy;
+        partial void OnModifiedByChanging(string value);
+        partial void OnModifiedByChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства Modified.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return this._Modified;
+            }
+            set
+            {
+                this.OnModifiedChanging(value);
+                if (object.Equals(this.Modified, value))
+                {
+                    return;
+                }
+                this._Modified = value;
+                this.OnModifiedChanged();
+                this.OnPropertyChanged("Modified");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для свойства RowVersion.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] RowVersion
+        {
+            get
+            {
+                if ((this._RowVersion != null))
+                {
+                    return ((byte[])(this._RowVersion.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnRowVersionChanging(value);
+                if (object.Equals(this.RowVersion, value))
+                {
+                    return;
+                }
+                this._RowVersion = value;
+                this.OnRowVersionChanged();
+                this.OnPropertyChanged("RowVersion");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _RowVersion;
+        partial void OnRowVersionChanging(byte[] value);
+        partial void OnRowVersionChanged();
+        /// <summary>
+        /// В схеме отсутствуют комментарии для RoomCollection.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceCollection<Room> RoomCollection
+        {
+            get
+            {
+                this.@__RoomCollection.EnsureValueInitialized();
+                return this._RoomCollection;
+            }
+            set
+            {
+                this._RoomCollection = value;
+                this.OnPropertyChanged("RoomCollection");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceCollection<Room> _RoomCollection = new global::System.Data.Services.Client.DataServiceCollection<Room>(null, global::System.Data.Services.Client.TrackingMode.None);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -1760,250 +2004,6 @@ namespace LightSwitchApplication.Implementation
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceCollection<Client> _ClientCollection = new global::System.Data.Services.Client.DataServiceCollection<Client>(null, global::System.Data.Services.Client.TrackingMode.None);
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// В схеме отсутствуют комментарии для LightSwitchApplication.RoomType.
-    /// </summary>
-    /// <KeyProperties>
-    /// Id
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("RoomTypeSet")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("Id")]
-    public partial class RoomType : global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityBase, global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Создайте новый объект RoomType.
-        /// </summary>
-        /// <param name="ID">Начальное значение Id.</param>
-        /// <param name="name">Начальное значение Name.</param>
-        /// <param name="rowVersion">Начальное значение RowVersion.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static RoomType CreateRoomType(int ID, string name, byte[] rowVersion)
-        {
-            RoomType roomType = new RoomType();
-            roomType.Id = ID;
-            roomType.Name = name;
-            roomType.RowVersion = rowVersion;
-            return roomType;
-        }
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Id.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int Id
-        {
-            get
-            {
-                return this._Id;
-            }
-            set
-            {
-                this.OnIdChanging(value);
-                if (object.Equals(this.Id, value))
-                {
-                    return;
-                }
-                this._Id = value;
-                this.OnIdChanged();
-                this.OnPropertyChanged("Id");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _Id;
-        partial void OnIdChanging(int value);
-        partial void OnIdChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Name.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Name
-        {
-            get
-            {
-                return this._Name;
-            }
-            set
-            {
-                this.OnNameChanging(value);
-                if (object.Equals(this.Name, value))
-                {
-                    return;
-                }
-                this._Name = value;
-                this.OnNameChanged();
-                this.OnPropertyChanged("Name");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Name;
-        partial void OnNameChanging(string value);
-        partial void OnNameChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства CreatedBy.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string CreatedBy
-        {
-            get
-            {
-                return this._CreatedBy;
-            }
-            set
-            {
-                this.OnCreatedByChanging(value);
-                if (object.Equals(this.CreatedBy, value))
-                {
-                    return;
-                }
-                this._CreatedBy = value;
-                this.OnCreatedByChanged();
-                this.OnPropertyChanged("CreatedBy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _CreatedBy;
-        partial void OnCreatedByChanging(string value);
-        partial void OnCreatedByChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Created.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTimeOffset> Created
-        {
-            get
-            {
-                return this._Created;
-            }
-            set
-            {
-                this.OnCreatedChanging(value);
-                if (object.Equals(this.Created, value))
-                {
-                    return;
-                }
-                this._Created = value;
-                this.OnCreatedChanged();
-                this.OnPropertyChanged("Created");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _Created;
-        partial void OnCreatedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnCreatedChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства ModifiedBy.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string ModifiedBy
-        {
-            get
-            {
-                return this._ModifiedBy;
-            }
-            set
-            {
-                this.OnModifiedByChanging(value);
-                if (object.Equals(this.ModifiedBy, value))
-                {
-                    return;
-                }
-                this._ModifiedBy = value;
-                this.OnModifiedByChanged();
-                this.OnPropertyChanged("ModifiedBy");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _ModifiedBy;
-        partial void OnModifiedByChanging(string value);
-        partial void OnModifiedByChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства Modified.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTimeOffset> Modified
-        {
-            get
-            {
-                return this._Modified;
-            }
-            set
-            {
-                this.OnModifiedChanging(value);
-                if (object.Equals(this.Modified, value))
-                {
-                    return;
-                }
-                this._Modified = value;
-                this.OnModifiedChanged();
-                this.OnPropertyChanged("Modified");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTimeOffset> _Modified;
-        partial void OnModifiedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
-        partial void OnModifiedChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для свойства RowVersion.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public byte[] RowVersion
-        {
-            get
-            {
-                if ((this._RowVersion != null))
-                {
-                    return ((byte[])(this._RowVersion.Clone()));
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            set
-            {
-                this.OnRowVersionChanging(value);
-                if (object.Equals(this.RowVersion, value))
-                {
-                    return;
-                }
-                this._RowVersion = value;
-                this.OnRowVersionChanged();
-                this.OnPropertyChanged("RowVersion");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private byte[] _RowVersion;
-        partial void OnRowVersionChanging(byte[] value);
-        partial void OnRowVersionChanged();
-        /// <summary>
-        /// В схеме отсутствуют комментарии для RoomCollection.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceCollection<Room> RoomCollection
-        {
-            get
-            {
-                this.@__RoomCollection.EnsureValueInitialized();
-                return this._RoomCollection;
-            }
-            set
-            {
-                this._RoomCollection = value;
-                this.OnPropertyChanged("RoomCollection");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceCollection<Room> _RoomCollection = new global::System.Data.Services.Client.DataServiceCollection<Room>(null, global::System.Data.Services.Client.TrackingMode.None);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]

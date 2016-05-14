@@ -48,13 +48,11 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseDesignTimeFeatures>false</UseDesignTimeFeatures>
-    <NoWarn>1522</NoWarn>
+	<Optimize>true</Optimize>
+	<OutputPath>bin\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExcelImporter.Common">
@@ -232,6 +230,7 @@
     <LightSwitchModel Include="DataSources\ApplicationData\Query2.lsml">
       <DependentUpon>SettlementSet.lsml</DependentUpon>
     </LightSwitchModel>
+    <None Include="Properties\PublishProfiles\LightSwitchLab - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

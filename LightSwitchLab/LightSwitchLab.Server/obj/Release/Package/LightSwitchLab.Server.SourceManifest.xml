@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <appHostConfig path="LightSwitchLab.Server" />
+  <contentPath path="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\obj\Release\Package\PackageTmp" />
+</sitemanifest>

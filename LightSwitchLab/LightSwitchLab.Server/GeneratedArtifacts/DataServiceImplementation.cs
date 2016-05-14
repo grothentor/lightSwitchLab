@@ -60,13 +60,17 @@ namespace LightSwitchApplication.Implementation
     #region Protected Methods
         protected override object CreateObject(global::System.Type type)
         {
+            if (type == typeof(global::LightSwitchApplication.Implementation.Client))
+            {
+                return new global::LightSwitchApplication.Implementation.Client();
+            }
             if (type == typeof(global::LightSwitchApplication.Implementation.Room))
             {
                 return new global::LightSwitchApplication.Implementation.Room();
             }
-            if (type == typeof(global::LightSwitchApplication.Implementation.Client))
+            if (type == typeof(global::LightSwitchApplication.Implementation.RoomType))
             {
-                return new global::LightSwitchApplication.Implementation.Client();
+                return new global::LightSwitchApplication.Implementation.RoomType();
             }
             if (type == typeof(global::LightSwitchApplication.Implementation.Settlement))
             {
@@ -75,10 +79,6 @@ namespace LightSwitchApplication.Implementation
             if (type == typeof(global::LightSwitchApplication.Implementation.Sex))
             {
                 return new global::LightSwitchApplication.Implementation.Sex();
-            }
-            if (type == typeof(global::LightSwitchApplication.Implementation.RoomType))
-            {
-                return new global::LightSwitchApplication.Implementation.RoomType();
             }
     
             return base.CreateObject(type);
@@ -96,13 +96,17 @@ namespace LightSwitchApplication.Implementation
     
         protected override global::Microsoft.LightSwitch.Internal.IEntityImplementation CreateEntityImplementation<T>()
         {
+            if (typeof(T) == typeof(global::LightSwitchApplication.Client))
+            {
+                return new global::LightSwitchApplication.Implementation.Client();
+            }
             if (typeof(T) == typeof(global::LightSwitchApplication.Room))
             {
                 return new global::LightSwitchApplication.Implementation.Room();
             }
-            if (typeof(T) == typeof(global::LightSwitchApplication.Client))
+            if (typeof(T) == typeof(global::LightSwitchApplication.RoomType))
             {
-                return new global::LightSwitchApplication.Implementation.Client();
+                return new global::LightSwitchApplication.Implementation.RoomType();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.Settlement))
             {
@@ -111,10 +115,6 @@ namespace LightSwitchApplication.Implementation
             if (typeof(T) == typeof(global::LightSwitchApplication.Sex))
             {
                 return new global::LightSwitchApplication.Implementation.Sex();
-            }
-            if (typeof(T) == typeof(global::LightSwitchApplication.RoomType))
-            {
-                return new global::LightSwitchApplication.Implementation.RoomType();
             }
             return null;
         }
@@ -161,13 +161,17 @@ namespace LightSwitchApplication.Implementation
     {
         global::System.Type global::Microsoft.LightSwitch.Internal.ITypeMappingProvider.GetImplementationType(global::System.Type definitionType)
         {
+            if (typeof(global::LightSwitchApplication.Client) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.Client);
+            }
             if (typeof(global::LightSwitchApplication.Room) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.Room);
             }
-            if (typeof(global::LightSwitchApplication.Client) == definitionType)
+            if (typeof(global::LightSwitchApplication.RoomType) == definitionType)
             {
-                return typeof(global::LightSwitchApplication.Implementation.Client);
+                return typeof(global::LightSwitchApplication.Implementation.RoomType);
             }
             if (typeof(global::LightSwitchApplication.Settlement) == definitionType)
             {
@@ -177,13 +181,76 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.Sex);
             }
-            if (typeof(global::LightSwitchApplication.RoomType) == definitionType)
-            {
-                return typeof(global::LightSwitchApplication.Implementation.RoomType);
-            }
             return null;
         }
     }
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class Client :
+        global::LightSwitchApplication.Client.DetailsClass.IImplementation,
+        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
+    
+    {
+    
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Client.DetailsClass.IImplementation.IdSex
+        {
+            get
+            {
+                return this.IdSex;
+            }
+            set
+            {
+                this.IdSex = (global::LightSwitchApplication.Implementation.Sex)value;
+                if (this.__host != null)
+                {
+                    this.__host.RaisePropertyChanged("IdSex");
+                }
+            }
+        }
+        
+        global::System.Collections.IEnumerable global::LightSwitchApplication.Client.DetailsClass.IImplementation.SettlementCollection
+        {
+            get
+            {
+                return this.SettlementCollection;
+            }
+        }
+        
+        partial void OnClient_SexChanged()
+        {
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged("IdSex");
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(propertyName);
+            }
+        }
+        #endregion
+    }
+    
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public partial class Room :
@@ -253,41 +320,17 @@ namespace LightSwitchApplication.Implementation
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public partial class Client :
-        global::LightSwitchApplication.Client.DetailsClass.IImplementation,
+    public partial class RoomType :
+        global::LightSwitchApplication.RoomType.DetailsClass.IImplementation,
         global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
     
     {
     
-        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.Client.DetailsClass.IImplementation.IdSex
+        global::System.Collections.IEnumerable global::LightSwitchApplication.RoomType.DetailsClass.IImplementation.RoomCollection
         {
             get
             {
-                return this.IdSex;
-            }
-            set
-            {
-                this.IdSex = (global::LightSwitchApplication.Implementation.Sex)value;
-                if (this.__host != null)
-                {
-                    this.__host.RaisePropertyChanged("IdSex");
-                }
-            }
-        }
-        
-        global::System.Collections.IEnumerable global::LightSwitchApplication.Client.DetailsClass.IImplementation.SettlementCollection
-        {
-            get
-            {
-                return this.SettlementCollection;
-            }
-        }
-        
-        partial void OnClient_SexChanged()
-        {
-            if (this.__host != null)
-            {
-                this.__host.RaisePropertyChanged("IdSex");
+                return this.RoomCollection;
             }
         }
         
@@ -414,49 +457,6 @@ namespace LightSwitchApplication.Implementation
             get
             {
                 return this.ClientCollection;
-            }
-        }
-        
-        #region IEntityImplementation Members
-        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
-        
-        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
-        {
-            get
-            {
-                return this.__host;
-            }
-        }
-        
-        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
-        {
-            this.__host = host;
-        }
-        
-        protected override void OnPropertyChanged(string propertyName)
-        {
-            base.OnPropertyChanged(propertyName);
-            if (this.__host != null)
-            {
-                this.__host.RaisePropertyChanged(propertyName);
-            }
-        }
-        #endregion
-    }
-    
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public partial class RoomType :
-        global::LightSwitchApplication.RoomType.DetailsClass.IImplementation,
-        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
-    
-    {
-    
-        global::System.Collections.IEnumerable global::LightSwitchApplication.RoomType.DetailsClass.IImplementation.RoomCollection
-        {
-            get
-            {
-                return this.RoomCollection;
             }
         }
         

@@ -19,10 +19,10 @@ using System.Xml.Serialization;
 [assembly: EdmSchemaAttribute()]
 #region Метаданные связи EDM
 
-[assembly: EdmRelationshipAttribute("LightSwitchApplication", "Client_Sex", "Sex", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Sex), "Client", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Client), true)]
-[assembly: EdmRelationshipAttribute("LightSwitchApplication", "Room_RoomType", "RoomType", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.RoomType), "Room", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Room), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Settlement_Client", "Client", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Client), "Settlement", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Settlement), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "Settlement_Room", "Room", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Room), "Settlement", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Settlement), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "Room_RoomType", "RoomType", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.RoomType), "Room", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Room), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "Client_Sex", "Sex", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.Sex), "Client", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.Client), true)]
 
 #endregion
 
@@ -74,6 +74,22 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// Нет доступной документации по метаданным.
         /// </summary>
+        public ObjectSet<Client> ClientSet
+        {
+            get
+            {
+                if ((_ClientSet == null))
+                {
+                    _ClientSet = base.CreateObjectSet<Client>("ClientSet");
+                }
+                return _ClientSet;
+            }
+        }
+        private ObjectSet<Client> _ClientSet;
+    
+        /// <summary>
+        /// Нет доступной документации по метаданным.
+        /// </summary>
         public ObjectSet<Room> RoomSet
         {
             get
@@ -90,18 +106,18 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// Нет доступной документации по метаданным.
         /// </summary>
-        public ObjectSet<Client> ClientSet
+        public ObjectSet<RoomType> RoomTypeSet
         {
             get
             {
-                if ((_ClientSet == null))
+                if ((_RoomTypeSet == null))
                 {
-                    _ClientSet = base.CreateObjectSet<Client>("ClientSet");
+                    _RoomTypeSet = base.CreateObjectSet<RoomType>("RoomTypeSet");
                 }
-                return _ClientSet;
+                return _RoomTypeSet;
             }
         }
-        private ObjectSet<Client> _ClientSet;
+        private ObjectSet<RoomType> _RoomTypeSet;
     
         /// <summary>
         /// Нет доступной документации по метаданным.
@@ -134,26 +150,18 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<Sex> _SexSet;
-    
-        /// <summary>
-        /// Нет доступной документации по метаданным.
-        /// </summary>
-        public ObjectSet<RoomType> RoomTypeSet
-        {
-            get
-            {
-                if ((_RoomTypeSet == null))
-                {
-                    _RoomTypeSet = base.CreateObjectSet<RoomType>("RoomTypeSet");
-                }
-                return _RoomTypeSet;
-            }
-        }
-        private ObjectSet<RoomType> _RoomTypeSet;
 
         #endregion
 
         #region Методы AddTo
+    
+        /// <summary>
+        /// Устаревший метод для добавления новых объектов в набор EntitySet ClientSet. Взамен можно использовать метод .Add связанного свойства ObjectSet&lt;T&gt;.
+        /// </summary>
+        public void AddToClientSet(Client client)
+        {
+            base.AddObject("ClientSet", client);
+        }
     
         /// <summary>
         /// Устаревший метод для добавления новых объектов в набор EntitySet RoomSet. Взамен можно использовать метод .Add связанного свойства ObjectSet&lt;T&gt;.
@@ -164,11 +172,11 @@ namespace LightSwitchApplication.Implementation
         }
     
         /// <summary>
-        /// Устаревший метод для добавления новых объектов в набор EntitySet ClientSet. Взамен можно использовать метод .Add связанного свойства ObjectSet&lt;T&gt;.
+        /// Устаревший метод для добавления новых объектов в набор EntitySet RoomTypeSet. Взамен можно использовать метод .Add связанного свойства ObjectSet&lt;T&gt;.
         /// </summary>
-        public void AddToClientSet(Client client)
+        public void AddToRoomTypeSet(RoomType roomType)
         {
-            base.AddObject("ClientSet", client);
+            base.AddObject("RoomTypeSet", roomType);
         }
     
         /// <summary>
@@ -185,14 +193,6 @@ namespace LightSwitchApplication.Implementation
         public void AddToSexSet(Sex sex)
         {
             base.AddObject("SexSet", sex);
-        }
-    
-        /// <summary>
-        /// Устаревший метод для добавления новых объектов в набор EntitySet RoomTypeSet. Взамен можно использовать метод .Add связанного свойства ObjectSet&lt;T&gt;.
-        /// </summary>
-        public void AddToRoomTypeSet(RoomType roomType)
-        {
-            base.AddObject("RoomTypeSet", roomType);
         }
 
         #endregion

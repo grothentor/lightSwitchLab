@@ -60,6 +60,42 @@ namespace LightSwitchApplication
         #region Server Interceptions Points
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Inserting(global::LightSwitchApplication.Client entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Inserted(global::LightSwitchApplication.Client entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Updating(global::LightSwitchApplication.Client entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Updated(global::LightSwitchApplication.Client entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Deleting(global::LightSwitchApplication.Client entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Deleted(global::LightSwitchApplication.Client entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Validate(global::LightSwitchApplication.Client entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void ClientSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Client, bool>> filter);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void RoomSet_CanInsert(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -96,40 +132,40 @@ namespace LightSwitchApplication
         partial void RoomSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Room, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_CanInsert(ref bool result);
+        partial void RoomTypeSet_CanInsert(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_CanUpdate(ref bool result);
+        partial void RoomTypeSet_CanUpdate(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_CanDelete(ref bool result);
+        partial void RoomTypeSet_CanDelete(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_CanRead(ref bool result);
+        partial void RoomTypeSet_CanRead(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Inserting(global::LightSwitchApplication.Client entity);
+        partial void RoomTypeSet_Inserting(global::LightSwitchApplication.RoomType entity);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Inserted(global::LightSwitchApplication.Client entity);
+        partial void RoomTypeSet_Inserted(global::LightSwitchApplication.RoomType entity);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Updating(global::LightSwitchApplication.Client entity);
+        partial void RoomTypeSet_Updating(global::LightSwitchApplication.RoomType entity);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Updated(global::LightSwitchApplication.Client entity);
+        partial void RoomTypeSet_Updated(global::LightSwitchApplication.RoomType entity);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Deleting(global::LightSwitchApplication.Client entity);
+        partial void RoomTypeSet_Deleting(global::LightSwitchApplication.RoomType entity);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Deleted(global::LightSwitchApplication.Client entity);
+        partial void RoomTypeSet_Deleted(global::LightSwitchApplication.RoomType entity);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Validate(global::LightSwitchApplication.Client entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+        partial void RoomTypeSet_Validate(global::LightSwitchApplication.RoomType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ClientSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Client, bool>> filter);
+        partial void RoomTypeSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.RoomType, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void SettlementSet_CanInsert(ref bool result);
@@ -204,42 +240,6 @@ namespace LightSwitchApplication
         partial void SexSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Sex, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_CanInsert(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_CanUpdate(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_CanDelete(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_CanRead(ref bool result);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Inserting(global::LightSwitchApplication.RoomType entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Inserted(global::LightSwitchApplication.RoomType entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Updating(global::LightSwitchApplication.RoomType entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Updated(global::LightSwitchApplication.RoomType entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Deleting(global::LightSwitchApplication.RoomType entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Deleted(global::LightSwitchApplication.RoomType entity);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Validate(global::LightSwitchApplication.RoomType entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomTypeSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.RoomType, bool>> filter);
-    
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void SaveChanges_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -302,6 +302,81 @@ namespace LightSwitchApplication
     
             static DetailsClass()
             {
+            }
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Client>
+                __ClientSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Client>(
+                    "ClientSet",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanInsert,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanUpdate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanDelete,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanRead,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Inserting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Inserted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Updating,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Updated,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Deleting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Deleted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Validate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Filter);
+            private static bool __ClientSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.ClientSet_CanInsert(ref result);
+                return result;
+            }
+            private static bool __ClientSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.ClientSet_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __ClientSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.ClientSet_CanDelete(ref result);
+                return result;
+            }
+            private static bool __ClientSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.ClientSet_CanRead(ref result);
+                return result;
+            }
+            private static void __ClientSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            {
+                d.ClientSet_Inserting(e);
+            }
+            private static void __ClientSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            {
+                d.ClientSet_Inserted(e);
+            }
+            private static void __ClientSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            {
+                d.ClientSet_Updating(e);
+            }
+            private static void __ClientSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            {
+                d.ClientSet_Updated(e);
+            }
+            private static void __ClientSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            {
+                d.ClientSet_Deleting(e);
+            }
+            private static void __ClientSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            {
+                d.ClientSet_Deleted(e);
+            }
+            private static void __ClientSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.ClientSet_Validate(e, r);
+            }
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Client, bool>> __ClientSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Client, bool>> filter = null;
+                d.ClientSet_Filter(ref filter);
+                return filter;
             }
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -380,77 +455,77 @@ namespace LightSwitchApplication
             }
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Client>
-                __ClientSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.Client>(
-                    "ClientSet",
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanInsert,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanUpdate,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanDelete,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_CanRead,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Inserting,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Inserted,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Updating,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Updated,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Deleting,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Deleted,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Validate,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ClientSet_Filter);
-            private static bool __ClientSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.RoomType>
+                __RoomTypeSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.RoomType>(
+                    "RoomTypeSet",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanInsert,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanUpdate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanDelete,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanRead,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Inserting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Inserted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Updating,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Updated,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Deleting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Deleted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Validate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Filter);
+            private static bool __RoomTypeSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
             {
                 bool result = true;
-                d.ClientSet_CanInsert(ref result);
+                d.RoomTypeSet_CanInsert(ref result);
                 return result;
             }
-            private static bool __ClientSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
+            private static bool __RoomTypeSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
             {
                 bool result = true;
-                d.ClientSet_CanUpdate(ref result);
+                d.RoomTypeSet_CanUpdate(ref result);
                 return result;
             }
-            private static bool __ClientSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
+            private static bool __RoomTypeSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
             {
                 bool result = true;
-                d.ClientSet_CanDelete(ref result);
+                d.RoomTypeSet_CanDelete(ref result);
                 return result;
             }
-            private static bool __ClientSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
+            private static bool __RoomTypeSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
             {
                 bool result = true;
-                d.ClientSet_CanRead(ref result);
+                d.RoomTypeSet_CanRead(ref result);
                 return result;
             }
-            private static void __ClientSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            private static void __RoomTypeSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
             {
-                d.ClientSet_Inserting(e);
+                d.RoomTypeSet_Inserting(e);
             }
-            private static void __ClientSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            private static void __RoomTypeSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
             {
-                d.ClientSet_Inserted(e);
+                d.RoomTypeSet_Inserted(e);
             }
-            private static void __ClientSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            private static void __RoomTypeSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
             {
-                d.ClientSet_Updating(e);
+                d.RoomTypeSet_Updating(e);
             }
-            private static void __ClientSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            private static void __RoomTypeSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
             {
-                d.ClientSet_Updated(e);
+                d.RoomTypeSet_Updated(e);
             }
-            private static void __ClientSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            private static void __RoomTypeSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
             {
-                d.ClientSet_Deleting(e);
+                d.RoomTypeSet_Deleting(e);
             }
-            private static void __ClientSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e)
+            private static void __RoomTypeSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
             {
-                d.ClientSet_Deleted(e);
+                d.RoomTypeSet_Deleted(e);
             }
-            private static void __ClientSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.Client e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            private static void __RoomTypeSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
             {
-                d.ClientSet_Validate(e, r);
+                d.RoomTypeSet_Validate(e, r);
             }
-            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Client, bool>> __ClientSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.RoomType, bool>> __RoomTypeSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
             {
-                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Client, bool>> filter = null;
-                d.ClientSet_Filter(ref filter);
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.RoomType, bool>> filter = null;
+                d.RoomTypeSet_Filter(ref filter);
                 return filter;
             }
             
@@ -601,81 +676,6 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.Sex, bool>> filter = null;
                 d.SexSet_Filter(ref filter);
-                return filter;
-            }
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.RoomType>
-                __RoomTypeSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.RoomType>(
-                    "RoomTypeSet",
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanInsert,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanUpdate,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanDelete,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_CanRead,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Inserting,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Inserted,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Updating,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Updated,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Deleting,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Deleted,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Validate,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__RoomTypeSet_Filter);
-            private static bool __RoomTypeSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.RoomTypeSet_CanInsert(ref result);
-                return result;
-            }
-            private static bool __RoomTypeSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.RoomTypeSet_CanUpdate(ref result);
-                return result;
-            }
-            private static bool __RoomTypeSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.RoomTypeSet_CanDelete(ref result);
-                return result;
-            }
-            private static bool __RoomTypeSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                bool result = true;
-                d.RoomTypeSet_CanRead(ref result);
-                return result;
-            }
-            private static void __RoomTypeSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
-            {
-                d.RoomTypeSet_Inserting(e);
-            }
-            private static void __RoomTypeSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
-            {
-                d.RoomTypeSet_Inserted(e);
-            }
-            private static void __RoomTypeSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
-            {
-                d.RoomTypeSet_Updating(e);
-            }
-            private static void __RoomTypeSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
-            {
-                d.RoomTypeSet_Updated(e);
-            }
-            private static void __RoomTypeSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
-            {
-                d.RoomTypeSet_Deleting(e);
-            }
-            private static void __RoomTypeSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e)
-            {
-                d.RoomTypeSet_Deleted(e);
-            }
-            private static void __RoomTypeSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
-            {
-                d.RoomTypeSet_Validate(e, r);
-            }
-            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.RoomType, bool>> __RoomTypeSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
-            {
-                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.RoomType, bool>> filter = null;
-                d.RoomTypeSet_Filter(ref filter);
                 return filter;
             }
             

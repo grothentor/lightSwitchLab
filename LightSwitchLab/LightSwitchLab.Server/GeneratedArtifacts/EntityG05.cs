@@ -17,32 +17,32 @@ namespace LightSwitchApplication
     /// Отсутствует описание модели
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-    public sealed partial class RoomType : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass>
+    public sealed partial class Sex : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass>
     {
         #region Constructors
     
         /// <summary>
-        /// Инициализирует новый экземпляр сущности RoomType.
+        /// Инициализирует новый экземпляр сущности Sex.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public RoomType()
+        public Sex()
             : this(null)
         {
         }
     
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public RoomType(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.RoomType> entitySet)
+        public Sex(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Sex> entitySet)
             : base(entitySet)
         {
-            global::LightSwitchApplication.RoomType.DetailsClass.Initialize(this);
+            global::LightSwitchApplication.Sex.DetailsClass.Initialize(this);
         }
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomType_Created();
+        partial void Sex_Created();
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RoomType_AllowSaveWithErrors(ref bool result);
+        partial void Sex_AllowSaveWithErrors(ref bool result);
     
         #endregion
     
@@ -87,11 +87,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Id);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Id);
             }
             set
             {
-                global::LightSwitchApplication.RoomType.DetailsClass.SetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Id, value);
+                global::LightSwitchApplication.Sex.DetailsClass.SetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Id, value);
             }
         }
         
@@ -111,11 +111,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Name);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Name);
             }
             set
             {
-                global::LightSwitchApplication.RoomType.DetailsClass.SetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Name, value);
+                global::LightSwitchApplication.Sex.DetailsClass.SetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Name, value);
             }
         }
         
@@ -135,7 +135,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.CreatedBy);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.CreatedBy);
             }
         }
         
@@ -163,7 +163,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Created);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Created);
             }
         }
         
@@ -183,7 +183,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.ModifiedBy);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.ModifiedBy);
             }
         }
         
@@ -211,7 +211,7 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Modified);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Modified);
             }
         }
         
@@ -232,11 +232,11 @@ namespace LightSwitchApplication
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RowVersion);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.RowVersion);
             }
             set
             {
-                global::LightSwitchApplication.RoomType.DetailsClass.SetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RowVersion, value);
+                global::LightSwitchApplication.Sex.DetailsClass.SetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.RowVersion, value);
             }
         }
         
@@ -252,21 +252,21 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.Room> RoomCollection
+        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.Client> ClientCollection
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetValue(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RoomCollection);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetValue(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.ClientCollection);
             }
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.Room> RoomCollectionQuery
+        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.Client> ClientCollectionQuery
         {
             get
             {
-                return global::LightSwitchApplication.RoomType.DetailsClass.GetQuery(this, global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RoomCollection);
+                return global::LightSwitchApplication.Sex.DetailsClass.GetQuery(this, global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.ClientCollection);
             }
         }
 
@@ -279,37 +279,37 @@ namespace LightSwitchApplication
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<
-                global::LightSwitchApplication.RoomType,
-                global::LightSwitchApplication.RoomType.DetailsClass,
-                global::LightSwitchApplication.RoomType.DetailsClass.IImplementation,
-                global::LightSwitchApplication.RoomType.DetailsClass.PropertySet,
-                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass>,
-                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass>>
+                global::LightSwitchApplication.Sex,
+                global::LightSwitchApplication.Sex.DetailsClass,
+                global::LightSwitchApplication.Sex.DetailsClass.IImplementation,
+                global::LightSwitchApplication.Sex.DetailsClass.PropertySet,
+                global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass>,
+                global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass>>
         {
     
             static DetailsClass()
             {
-                var initializeEntry = global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Id;
+                var initializeEntry = global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Id;
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass>.Entry
-                __RoomTypeEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass>.Entry(
-                    global::LightSwitchApplication.RoomType.DetailsClass.__RoomType_CreateNew,
-                    global::LightSwitchApplication.RoomType.DetailsClass.__RoomType_Created,
-                    global::LightSwitchApplication.RoomType.DetailsClass.__RoomType_AllowSaveWithErrors);
-            private static global::LightSwitchApplication.RoomType __RoomType_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.RoomType> es)
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass>.Entry
+                __SexEntry = new global::Microsoft.LightSwitch.Details.Framework.Base.EntityDetails<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass>.Entry(
+                    global::LightSwitchApplication.Sex.DetailsClass.__Sex_CreateNew,
+                    global::LightSwitchApplication.Sex.DetailsClass.__Sex_Created,
+                    global::LightSwitchApplication.Sex.DetailsClass.__Sex_AllowSaveWithErrors);
+            private static global::LightSwitchApplication.Sex __Sex_CreateNew(global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.Sex> es)
             {
-                return new global::LightSwitchApplication.RoomType(es);
+                return new global::LightSwitchApplication.Sex(es);
             }
-            private static void __RoomType_Created(global::LightSwitchApplication.RoomType e)
+            private static void __Sex_Created(global::LightSwitchApplication.Sex e)
             {
-                e.RoomType_Created();
+                e.Sex_Created();
             }
-            private static bool __RoomType_AllowSaveWithErrors(global::LightSwitchApplication.RoomType e)
+            private static bool __Sex_AllowSaveWithErrors(global::LightSwitchApplication.Sex e)
             {
                 bool result = false;
-                e.RoomType_AllowSaveWithErrors(ref result);
+                e.Sex_AllowSaveWithErrors(ref result);
                 return result;
             }
     
@@ -317,7 +317,7 @@ namespace LightSwitchApplication
             {
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass> Commands
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityCommandSet<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass> Commands
             {
                 get
                 {
@@ -325,7 +325,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass> Methods
+            public new global::Microsoft.LightSwitch.Details.Framework.EntityMethodSet<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass> Methods
             {
                 get
                 {
@@ -333,7 +333,7 @@ namespace LightSwitchApplication
                 }
             }
     
-            public new global::LightSwitchApplication.RoomType.DetailsClass.PropertySet Properties
+            public new global::LightSwitchApplication.Sex.DetailsClass.PropertySet Properties
             {
                 get
                 {
@@ -345,74 +345,74 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass>
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.EntityPropertySet<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass>
             {
     
                 public PropertySet() : base()
                 {
                 }
     
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, int> Id
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, int> Id
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, int>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Id) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, int>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string> Name
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string> Name
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Name) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Name) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string> CreatedBy
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string> CreatedBy
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.CreatedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.CreatedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Created
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Created
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Created) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Created) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string> ModifiedBy
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string> ModifiedBy
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.ModifiedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.ModifiedBy) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Modified
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>> Modified
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.Modified) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.Modified) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, byte[]> RowVersion
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, byte[]> RowVersion
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RowVersion) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, byte[]>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.RowVersion) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, byte[]>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::LightSwitchApplication.Room> RoomCollection
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::LightSwitchApplication.Client> ClientCollection
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RoomCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::LightSwitchApplication.Room>;
+                        return base.GetItem(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.ClientCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::LightSwitchApplication.Client>;
                     }
                 }
                 
@@ -429,7 +429,7 @@ namespace LightSwitchApplication
                 new string ModifiedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Modified { get; }
                 new byte[] RowVersion { get; set; }
-                new global::System.Collections.IEnumerable RoomCollection { get; }
+                new global::System.Collections.IEnumerable ClientCollection { get; }
             }
             #pragma warning restore 109
     
@@ -440,293 +440,293 @@ namespace LightSwitchApplication
             {
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, int>.Entry
-                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, int>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, int>.Entry
+                    Id = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, int>.Entry(
                         "Id",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Id_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Id_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Id_OnValueChanged);
-                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, int>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Id_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Id_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Id_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Id_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Id_SetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Id_OnValueChanged);
+                private static void _Id_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, int>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._Id, sf);
                 }
-                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _Id_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.Id_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Id_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Id_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Id_Validate(r);
                 }
-                private static int _Id_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static int _Id_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.Id;
                 }
-                private static void _Id_SetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d, int v)
+                private static void _Id_SetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d, int v)
                 {
                     d.ImplementationEntity.Id = v;
                 }
-                private static void _Id_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _Id_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.Id_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Entry
-                    Name = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Entry
+                    Name = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Entry(
                         "Name",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Name_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Name_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Name_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Name_GetImplementationValue,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Name_SetImplementationValue,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Name_OnValueChanged);
-                private static void _Name_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Name_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Name_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Name_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Name_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Name_SetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Name_OnValueChanged);
+                private static void _Name_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._Name, sf);
                 }
-                private static bool _Name_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _Name_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.Name_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Name_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Name_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Name_Validate(r);
                 }
-                private static string _Name_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static string _Name_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.Name;
                 }
-                private static void _Name_SetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d, string v)
+                private static void _Name_SetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d, string v)
                 {
                     d.ImplementationEntity.Name = v;
                 }
-                private static void _Name_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _Name_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.Name_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Entry
-                    CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Entry
+                    CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Entry(
                         "CreatedBy",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._CreatedBy_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._CreatedBy_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._CreatedBy_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._CreatedBy_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._CreatedBy_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._CreatedBy_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._CreatedBy_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._CreatedBy_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._CreatedBy_OnValueChanged);
-                private static void _CreatedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._CreatedBy_OnValueChanged);
+                private static void _CreatedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._CreatedBy, sf);
                 }
-                private static bool _CreatedBy_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _CreatedBy_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.CreatedBy_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _CreatedBy_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _CreatedBy_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.CreatedBy_Validate(r);
                 }
-                private static string _CreatedBy_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static string _CreatedBy_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.CreatedBy;
                 }
-                private static void _CreatedBy_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _CreatedBy_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.CreatedBy_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
-                    Created = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
+                    Created = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
                         "Created",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Created_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Created_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Created_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Created_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Created_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Created_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Created_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Created_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Created_OnValueChanged);
-                private static void _Created_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Created_OnValueChanged);
+                private static void _Created_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._Created, sf);
                 }
-                private static bool _Created_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _Created_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.Created_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Created_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Created_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Created_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTimeOffset> _Created_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static global::System.Nullable<global::System.DateTimeOffset> _Created_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.Created;
                 }
-                private static void _Created_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _Created_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.Created_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Entry
-                    ModifiedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Entry
+                    ModifiedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Entry(
                         "ModifiedBy",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._ModifiedBy_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._ModifiedBy_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._ModifiedBy_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._ModifiedBy_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ModifiedBy_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ModifiedBy_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ModifiedBy_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ModifiedBy_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._ModifiedBy_OnValueChanged);
-                private static void _ModifiedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ModifiedBy_OnValueChanged);
+                private static void _ModifiedBy_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._ModifiedBy, sf);
                 }
-                private static bool _ModifiedBy_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _ModifiedBy_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.ModifiedBy_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _ModifiedBy_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _ModifiedBy_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.ModifiedBy_Validate(r);
                 }
-                private static string _ModifiedBy_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static string _ModifiedBy_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.ModifiedBy;
                 }
-                private static void _ModifiedBy_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _ModifiedBy_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.ModifiedBy_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
-                    Modified = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry
+                    Modified = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Entry(
                         "Modified",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Modified_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Modified_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Modified_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Modified_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Modified_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Modified_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Modified_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Modified_GetImplementationValue,
                         null,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._Modified_OnValueChanged);
-                private static void _Modified_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._Modified_OnValueChanged);
+                private static void _Modified_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._Modified, sf);
                 }
-                private static bool _Modified_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _Modified_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.Modified_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _Modified_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Modified_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.Modified_Validate(r);
                 }
-                private static global::System.Nullable<global::System.DateTimeOffset> _Modified_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static global::System.Nullable<global::System.DateTimeOffset> _Modified_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.Modified;
                 }
-                private static void _Modified_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _Modified_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.Modified_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, byte[]>.Entry
-                    RowVersion = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, byte[]>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, byte[]>.Entry
+                    RowVersion = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, byte[]>.Entry(
                         "RowVersion",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RowVersion_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RowVersion_ComputeIsReadOnly,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RowVersion_Validate,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RowVersion_GetImplementationValue,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RowVersion_SetImplementationValue,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RowVersion_OnValueChanged);
-                private static void _RowVersion_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, byte[]>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._RowVersion_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._RowVersion_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._RowVersion_Validate,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._RowVersion_GetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._RowVersion_SetImplementationValue,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._RowVersion_OnValueChanged);
+                private static void _RowVersion_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, byte[]>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
                     c(d, ref d._RowVersion, sf);
                 }
-                private static bool _RowVersion_ComputeIsReadOnly(global::LightSwitchApplication.RoomType e)
+                private static bool _RowVersion_ComputeIsReadOnly(global::LightSwitchApplication.Sex e)
                 {
                     bool result = false;
                     e.RowVersion_IsReadOnly(ref result);
                     return result;
                 }
-                private static void _RowVersion_Validate(global::LightSwitchApplication.RoomType e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _RowVersion_Validate(global::LightSwitchApplication.Sex e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
                     e.RowVersion_Validate(r);
                 }
-                private static byte[] _RowVersion_GetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static byte[] _RowVersion_GetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
                     return d.ImplementationEntity.RowVersion;
                 }
-                private static void _RowVersion_SetImplementationValue(global::LightSwitchApplication.RoomType.DetailsClass d, byte[] v)
+                private static void _RowVersion_SetImplementationValue(global::LightSwitchApplication.Sex.DetailsClass d, byte[] v)
                 {
                     d.ImplementationEntity.RowVersion = v;
                 }
-                private static void _RowVersion_OnValueChanged(global::LightSwitchApplication.RoomType e)
+                private static void _RowVersion_OnValueChanged(global::LightSwitchApplication.Sex e)
                 {
                     e.RowVersion_Changed();
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::LightSwitchApplication.Room>.Entry
-                    RoomCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::LightSwitchApplication.Room>.Entry(
-                        "RoomCollection",
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RoomCollection_Stub,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RoomCollection_GetReferencedEntities,
-                        global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties._RoomCollection_GetEntityCollection);
-                private static void _RoomCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.RoomType.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::LightSwitchApplication.Room>.Data> c, global::LightSwitchApplication.RoomType.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::LightSwitchApplication.Client>.Entry
+                    ClientCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::LightSwitchApplication.Client>.Entry(
+                        "ClientCollection",
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ClientCollection_Stub,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ClientCollection_GetReferencedEntities,
+                        global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties._ClientCollection_GetEntityCollection);
+                private static void _ClientCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Sex.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::LightSwitchApplication.Client>.Data> c, global::LightSwitchApplication.Sex.DetailsClass d, object sf)
                 {
-                    c(d, ref d._RoomCollection, sf);
+                    c(d, ref d._ClientCollection, sf);
                 }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Room> _RoomCollection_GetReferencedEntities(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.Client> _ClientCollection_GetReferencedEntities(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.Room, global::LightSwitchApplication.Room.DetailsClass>(global::LightSwitchApplication.RoomType.DetailsClass.PropertySetProperties.RoomCollection, ref d._RoomCollection);
+                    return d.GetReferencedEntities<global::LightSwitchApplication.Client, global::LightSwitchApplication.Client.DetailsClass>(global::LightSwitchApplication.Sex.DetailsClass.PropertySetProperties.ClientCollection, ref d._ClientCollection);
                 }
-                private static global::System.Collections.IEnumerable _RoomCollection_GetEntityCollection(global::LightSwitchApplication.RoomType.DetailsClass d)
+                private static global::System.Collections.IEnumerable _ClientCollection_GetEntityCollection(global::LightSwitchApplication.Sex.DetailsClass d)
                 {
-                    return d.ImplementationEntity.RoomCollection;
+                    return d.ImplementationEntity.ClientCollection;
                 }
     
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, int>.Data _Id;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, int>.Data _Id;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Data _Name;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Data _Name;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Data _CreatedBy;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Data _CreatedBy;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Created;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Created;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, string>.Data _ModifiedBy;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, string>.Data _ModifiedBy;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Modified;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::System.Nullable<global::System.DateTimeOffset>>.Data _Modified;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, byte[]>.Data _RowVersion;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, byte[]>.Data _RowVersion;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.RoomType, global::LightSwitchApplication.RoomType.DetailsClass, global::LightSwitchApplication.Room>.Data _RoomCollection;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.Sex, global::LightSwitchApplication.Sex.DetailsClass, global::LightSwitchApplication.Client>.Data _ClientCollection;
             
         }
     

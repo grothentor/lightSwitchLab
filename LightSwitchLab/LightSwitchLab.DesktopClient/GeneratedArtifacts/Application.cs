@@ -37,66 +37,6 @@ namespace LightSwitchApplication
         }
 
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactClient_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactClient_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowRedactClient.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowRedactClient()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactClient);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactRoom_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactRoom_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowRedactRoom.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowRedactRoom()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactRoom);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactSex_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactSex_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowRedactSex.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowRedactSex()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactSex);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactRoomType_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void RedactRoomType_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowRedactRoomType.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowRedactRoomType()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactRoomType);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void ClientDetail_CanRun(ref bool result, int ClientId);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void ClientDetail_Run(ref bool handled, int ClientId);
@@ -109,51 +49,6 @@ namespace LightSwitchApplication
         public void ShowClientDetail(int ClientId)
         {
             ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowClientDetail, ClientId);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SearchClientSet_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SearchClientSet_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowSearchClientSet.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowSearchClientSet()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowSearchClientSet);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SearchSettlementSet_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SearchSettlementSet_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowSearchSettlementSet.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowSearchSettlementSet()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowSearchSettlementSet);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SearchRoomSet_CanRun(ref bool result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void SearchRoomSet_Run(ref bool handled);
-    
-        /// <summary>
-        /// Открывает экран ShowSearchRoomSet.  Если экран уже открыт, он активируется и отображается.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowSearchRoomSet()
-        {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowSearchRoomSet);
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -187,6 +82,66 @@ namespace LightSwitchApplication
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EditableSettlementSetGrid_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EditableSettlementSetGrid_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowEditableSettlementSetGrid.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowEditableSettlementSetGrid()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowEditableSettlementSetGrid);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RedactClient_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RedactClient_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowRedactClient.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowRedactClient()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactClient);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RedactRoom_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RedactRoom_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowRedactRoom.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowRedactRoom()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactRoom);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RedactRoomType_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void RedactRoomType_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowRedactRoomType.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowRedactRoomType()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactRoomType);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void RedactSettlement_CanRun(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void RedactSettlement_Run(ref bool handled);
@@ -202,18 +157,63 @@ namespace LightSwitchApplication
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void EditableSettlementSetGrid_CanRun(ref bool result);
+        partial void RedactSex_CanRun(ref bool result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void EditableSettlementSetGrid_Run(ref bool handled);
+        partial void RedactSex_Run(ref bool handled);
     
         /// <summary>
-        /// Открывает экран ShowEditableSettlementSetGrid.  Если экран уже открыт, он активируется и отображается.
+        /// Открывает экран ShowRedactSex.  Если экран уже открыт, он активируется и отображается.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public void ShowEditableSettlementSetGrid()
+        public void ShowRedactSex()
         {
-            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowEditableSettlementSetGrid);
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowRedactSex);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchClientSet_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchClientSet_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowSearchClientSet.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowSearchClientSet()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowSearchClientSet);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchRoomSet_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchRoomSet_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowSearchRoomSet.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowSearchRoomSet()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowSearchRoomSet);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchSettlementSet_CanRun(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SearchSettlementSet_Run(ref bool handled);
+    
+        /// <summary>
+        /// Открывает экран ShowSearchSettlementSet.  Если экран уже открыт, он активируется и отображается.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public void ShowSearchSettlementSet()
+        {
+            ((global::Microsoft.LightSwitch.Details.Client.IClientApplicationDetails)this.Details).InvokeMethod(this.Details.Methods.ShowSearchSettlementSet);
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -240,8 +240,8 @@ namespace LightSwitchApplication
 
             static DetailsClass()
             {
-                var initializeCommandEntry = global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactClient;
-                var initializeMethodEntry = global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactClient;
+                var initializeCommandEntry = global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowEditableQuery1Grid;
+                var initializeMethodEntry = global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowClientDetail;
             }
 
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -290,30 +290,30 @@ namespace LightSwitchApplication
             {
                 switch (screenName)
                 {
-                    case "RedactClient":
-                        return global::LightSwitchApplication.RedactClient.CreateInstance();
-                    case "RedactRoom":
-                        return global::LightSwitchApplication.RedactRoom.CreateInstance();
-                    case "RedactSex":
-                        return global::LightSwitchApplication.RedactSex.CreateInstance();
-                    case "RedactRoomType":
-                        return global::LightSwitchApplication.RedactRoomType.CreateInstance();
                     case "ClientDetail":
                         return global::LightSwitchApplication.ClientDetail.CreateInstance((int)args[0]);
-                    case "SearchClientSet":
-                        return global::LightSwitchApplication.SearchClientSet.CreateInstance();
-                    case "SearchSettlementSet":
-                        return global::LightSwitchApplication.SearchSettlementSet.CreateInstance();
-                    case "SearchRoomSet":
-                        return global::LightSwitchApplication.SearchRoomSet.CreateInstance();
                     case "EditableQuery1Grid":
                         return global::LightSwitchApplication.EditableQuery1Grid.CreateInstance();
                     case "EditableQuery2Grid":
                         return global::LightSwitchApplication.EditableQuery2Grid.CreateInstance();
-                    case "RedactSettlement":
-                        return global::LightSwitchApplication.RedactSettlement.CreateInstance();
                     case "EditableSettlementSetGrid":
                         return global::LightSwitchApplication.EditableSettlementSetGrid.CreateInstance();
+                    case "RedactClient":
+                        return global::LightSwitchApplication.RedactClient.CreateInstance();
+                    case "RedactRoom":
+                        return global::LightSwitchApplication.RedactRoom.CreateInstance();
+                    case "RedactRoomType":
+                        return global::LightSwitchApplication.RedactRoomType.CreateInstance();
+                    case "RedactSettlement":
+                        return global::LightSwitchApplication.RedactSettlement.CreateInstance();
+                    case "RedactSex":
+                        return global::LightSwitchApplication.RedactSex.CreateInstance();
+                    case "SearchClientSet":
+                        return global::LightSwitchApplication.SearchClientSet.CreateInstance();
+                    case "SearchRoomSet":
+                        return global::LightSwitchApplication.SearchRoomSet.CreateInstance();
+                    case "SearchSettlementSet":
+                        return global::LightSwitchApplication.SearchSettlementSet.CreateInstance();
                     case "SettlementSetListDetail":
                         return global::LightSwitchApplication.SettlementSetListDetail.CreateInstance();
                 }
@@ -337,69 +337,6 @@ namespace LightSwitchApplication
                 : global::Microsoft.LightSwitch.Details.Framework.Client.ClientApplicationCommandSet<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>
             {
 
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactClient
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactClient);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoom
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactRoom);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactSex
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactSex);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoomType
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactRoomType);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchClientSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowSearchClientSet);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchSettlementSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowSearchSettlementSet);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchRoomSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowSearchRoomSet);
-                    }
-                }
-
                 public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowEditableQuery1Grid
                 {
                     get
@@ -418,6 +355,42 @@ namespace LightSwitchApplication
                     }
                 }
 
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowEditableSettlementSetGrid
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowEditableSettlementSetGrid);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactClient
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactClient);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoom
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactRoom);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoomType
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactRoomType);
+                    }
+                }
+
                 public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactSettlement
                 {
                     get
@@ -427,12 +400,39 @@ namespace LightSwitchApplication
                     }
                 }
 
-                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowEditableSettlementSetGrid
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactSex
                 {
                     get
                     {
                         return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowEditableSettlementSetGrid);
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowRedactSex);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchClientSet
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowSearchClientSet);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchRoomSet
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowSearchRoomSet);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchSettlementSet
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties.ShowSearchSettlementSet);
                     }
                 }
 
@@ -454,75 +454,12 @@ namespace LightSwitchApplication
                 : global::Microsoft.LightSwitch.Details.Framework.Client.ClientApplicationMethodSet<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>
             {
 
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactClient
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactClient);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoom
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactRoom);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactSex
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactSex);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoomType
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactRoomType);
-                    }
-                }
-
                 public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowClientDetail
                 {
                     get
                     {
                         return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
                                base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowClientDetail);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchClientSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowSearchClientSet);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchSettlementSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowSearchSettlementSet);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchRoomSet
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowSearchRoomSet);
                     }
                 }
 
@@ -544,6 +481,42 @@ namespace LightSwitchApplication
                     }
                 }
 
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowEditableSettlementSetGrid
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowEditableSettlementSetGrid);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactClient
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactClient);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoom
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactRoom);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactRoomType
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactRoomType);
+                    }
+                }
+
                 public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactSettlement
                 {
                     get
@@ -553,12 +526,39 @@ namespace LightSwitchApplication
                     }
                 }
 
-                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowEditableSettlementSetGrid
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowRedactSex
                 {
                     get
                     {
                         return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
-                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowEditableSettlementSetGrid);
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowRedactSex);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchClientSet
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowSearchClientSet);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchRoomSet
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowSearchRoomSet);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass> ShowSearchSettlementSet
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>)
+                               base.GetItem(global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties.ShowSearchSettlementSet);
                     }
                 }
 
@@ -586,104 +586,6 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal sealed class CommandSetProperties
             {
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactClient = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactClient",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactClient_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactClient_CreateExecutableObject);
-                private static void _ShowRedactClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactClientCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactClient_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactClient.CreateInvocation(new object[0]);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactRoom = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactRoom",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoom_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoom_CreateExecutableObject);
-                private static void _ShowRedactRoom_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactRoomCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactRoom_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactRoom.CreateInvocation(new object[0]);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactSex = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactSex",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactSex_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactSex_CreateExecutableObject);
-                private static void _ShowRedactSex_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactSexCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactSex_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactSex.CreateInvocation(new object[0]);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactRoomType = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactRoomType",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoomType_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoomType_CreateExecutableObject);
-                private static void _ShowRedactRoomType_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactRoomTypeCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactRoomType_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactRoomType.CreateInvocation(new object[0]);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowSearchClientSet = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowSearchClientSet",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchClientSet_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchClientSet_CreateExecutableObject);
-                private static void _ShowSearchClientSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowSearchClientSetCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowSearchClientSet_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowSearchClientSet.CreateInvocation(new object[0]);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowSearchSettlementSet = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowSearchSettlementSet",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchSettlementSet_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchSettlementSet_CreateExecutableObject);
-                private static void _ShowSearchSettlementSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowSearchSettlementSetCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowSearchSettlementSet_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowSearchSettlementSet.CreateInvocation(new object[0]);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowSearchRoomSet = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowSearchRoomSet",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchRoomSet_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchRoomSet_CreateExecutableObject);
-                private static void _ShowSearchRoomSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowSearchRoomSetCommand, sf);
-                }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowSearchRoomSet_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
-                {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowSearchRoomSet.CreateInvocation(new object[0]);
-                }
 
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
                     ShowEditableQuery1Grid = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
@@ -714,6 +616,62 @@ namespace LightSwitchApplication
                 }
 
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowEditableSettlementSetGrid = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowEditableSettlementSetGrid",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowEditableSettlementSetGrid_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowEditableSettlementSetGrid_CreateExecutableObject);
+                private static void _ShowEditableSettlementSetGrid_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowEditableSettlementSetGridCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowEditableSettlementSetGrid_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowEditableSettlementSetGrid.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowRedactClient = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactClient",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactClient_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactClient_CreateExecutableObject);
+                private static void _ShowRedactClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowRedactClientCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactClient_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactClient.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowRedactRoom = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactRoom",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoom_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoom_CreateExecutableObject);
+                private static void _ShowRedactRoom_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowRedactRoomCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactRoom_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactRoom.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowRedactRoomType = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactRoomType",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoomType_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactRoomType_CreateExecutableObject);
+                private static void _ShowRedactRoomType_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowRedactRoomTypeCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactRoomType_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactRoomType.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
                     ShowRedactSettlement = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
                         "ShowRedactSettlement",
                         global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactSettlement_Stub,
@@ -728,17 +686,59 @@ namespace LightSwitchApplication
                 }
 
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowEditableSettlementSetGrid = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowEditableSettlementSetGrid",
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowEditableSettlementSetGrid_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowEditableSettlementSetGrid_CreateExecutableObject);
-                private static void _ShowEditableSettlementSetGrid_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                    ShowRedactSex = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactSex",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactSex_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowRedactSex_CreateExecutableObject);
+                private static void _ShowRedactSex_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
                 {
-                    c(d, ref d._ShowEditableSettlementSetGridCommand, sf);
+                    c(d, ref d._ShowRedactSexCommand, sf);
                 }
-                private static global::Microsoft.LightSwitch.IExecutable _ShowEditableSettlementSetGrid_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                private static global::Microsoft.LightSwitch.IExecutable _ShowRedactSex_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
                 {
-                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowEditableSettlementSetGrid.CreateInvocation(new object[0]);
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowRedactSex.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowSearchClientSet = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowSearchClientSet",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchClientSet_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchClientSet_CreateExecutableObject);
+                private static void _ShowSearchClientSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowSearchClientSetCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowSearchClientSet_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowSearchClientSet.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowSearchRoomSet = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowSearchRoomSet",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchRoomSet_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchRoomSet_CreateExecutableObject);
+                private static void _ShowSearchRoomSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowSearchRoomSetCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowSearchRoomSet_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowSearchRoomSet.CreateInvocation(new object[0]);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowSearchSettlementSet = new global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowSearchSettlementSet",
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchSettlementSet_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.CommandSetProperties._ShowSearchSettlementSet_CreateExecutableObject);
+                private static void _ShowSearchSettlementSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowSearchSettlementSetCommand, sf);
+                }
+                private static global::Microsoft.LightSwitch.IExecutable _ShowSearchSettlementSet_CreateExecutableObject(global::LightSwitchApplication.Application.DetailsClass d)
+                {
+                    return ((global::LightSwitchApplication.Application.DetailsClass)d).Methods.ShowSearchSettlementSet.CreateInvocation(new object[0]);
                 }
 
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
@@ -764,110 +764,6 @@ namespace LightSwitchApplication
             {
 
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactClient = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactClient",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactClient_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactClient_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactClient_InvokeMethod);
-                private static void _ShowRedactClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactClientMethod, sf);
-                }
-                private static global::System.Exception _ShowRedactClient_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.RedactClient_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowRedactClient_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.RedactClient_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactClient", () => global::LightSwitchApplication.RedactClient.CreateInstance(), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactRoom = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactRoom",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoom_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoom_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoom_InvokeMethod);
-                private static void _ShowRedactRoom_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactRoomMethod, sf);
-                }
-                private static global::System.Exception _ShowRedactRoom_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.RedactRoom_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowRedactRoom_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.RedactRoom_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactRoom", () => global::LightSwitchApplication.RedactRoom.CreateInstance(), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactSex = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactSex",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSex_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSex_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSex_InvokeMethod);
-                private static void _ShowRedactSex_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactSexMethod, sf);
-                }
-                private static global::System.Exception _ShowRedactSex_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.RedactSex_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowRedactSex_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.RedactSex_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactSex", () => global::LightSwitchApplication.RedactSex.CreateInstance(), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowRedactRoomType = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowRedactRoomType",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoomType_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoomType_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoomType_InvokeMethod);
-                private static void _ShowRedactRoomType_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowRedactRoomTypeMethod, sf);
-                }
-                private static global::System.Exception _ShowRedactRoomType_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.RedactRoomType_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowRedactRoomType_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.RedactRoomType_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactRoomType", () => global::LightSwitchApplication.RedactRoomType.CreateInstance(), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
                     ShowClientDetail = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
                         "ShowClientDetail",
                         global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowClientDetail_Stub,
@@ -890,84 +786,6 @@ namespace LightSwitchApplication
                     if (!handled)
                     {
                         d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:ClientDetail", () => global::LightSwitchApplication.ClientDetail.CreateInstance((int)args[0]), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowSearchClientSet = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowSearchClientSet",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchClientSet_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchClientSet_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchClientSet_InvokeMethod);
-                private static void _ShowSearchClientSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowSearchClientSetMethod, sf);
-                }
-                private static global::System.Exception _ShowSearchClientSet_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.SearchClientSet_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowSearchClientSet_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.SearchClientSet_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:SearchClientSet", () => global::LightSwitchApplication.SearchClientSet.CreateInstance(), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowSearchSettlementSet = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowSearchSettlementSet",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchSettlementSet_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchSettlementSet_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchSettlementSet_InvokeMethod);
-                private static void _ShowSearchSettlementSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowSearchSettlementSetMethod, sf);
-                }
-                private static global::System.Exception _ShowSearchSettlementSet_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.SearchSettlementSet_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowSearchSettlementSet_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.SearchSettlementSet_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:SearchSettlementSet", () => global::LightSwitchApplication.SearchSettlementSet.CreateInstance(), args);
-                    }
-                }
- 
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowSearchRoomSet = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowSearchRoomSet",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchRoomSet_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchRoomSet_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchRoomSet_InvokeMethod);
-                private static void _ShowSearchRoomSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
-                {
-                    c(d, ref d._ShowSearchRoomSetMethod, sf);
-                }
-                private static global::System.Exception _ShowSearchRoomSet_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
-                {
-                    bool result = true;
-                    d.Application.SearchRoomSet_CanRun(ref result);
-                    return result ? null : ex;
-                }
-                private static void _ShowSearchRoomSet_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
-                {
-                    bool handled = false;
-                    d.Application.SearchRoomSet_Run(ref handled);
-                    if (!handled)
-                    {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:SearchRoomSet", () => global::LightSwitchApplication.SearchRoomSet.CreateInstance(), args);
                     }
                 }
  
@@ -1024,6 +842,110 @@ namespace LightSwitchApplication
                 }
  
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowEditableSettlementSetGrid = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowEditableSettlementSetGrid",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowEditableSettlementSetGrid_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowEditableSettlementSetGrid_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowEditableSettlementSetGrid_InvokeMethod);
+                private static void _ShowEditableSettlementSetGrid_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowEditableSettlementSetGridMethod, sf);
+                }
+                private static global::System.Exception _ShowEditableSettlementSetGrid_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.EditableSettlementSetGrid_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowEditableSettlementSetGrid_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.EditableSettlementSetGrid_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:EditableSettlementSetGrid", () => global::LightSwitchApplication.EditableSettlementSetGrid.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowRedactClient = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactClient",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactClient_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactClient_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactClient_InvokeMethod);
+                private static void _ShowRedactClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowRedactClientMethod, sf);
+                }
+                private static global::System.Exception _ShowRedactClient_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.RedactClient_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowRedactClient_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.RedactClient_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactClient", () => global::LightSwitchApplication.RedactClient.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowRedactRoom = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactRoom",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoom_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoom_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoom_InvokeMethod);
+                private static void _ShowRedactRoom_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowRedactRoomMethod, sf);
+                }
+                private static global::System.Exception _ShowRedactRoom_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.RedactRoom_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowRedactRoom_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.RedactRoom_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactRoom", () => global::LightSwitchApplication.RedactRoom.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowRedactRoomType = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactRoomType",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoomType_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoomType_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactRoomType_InvokeMethod);
+                private static void _ShowRedactRoomType_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowRedactRoomTypeMethod, sf);
+                }
+                private static global::System.Exception _ShowRedactRoomType_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.RedactRoomType_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowRedactRoomType_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.RedactRoomType_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactRoomType", () => global::LightSwitchApplication.RedactRoomType.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
                     ShowRedactSettlement = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
                         "ShowRedactSettlement",
                         global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSettlement_Stub,
@@ -1050,28 +972,106 @@ namespace LightSwitchApplication
                 }
  
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
-                    ShowEditableSettlementSetGrid = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
-                        "ShowEditableSettlementSetGrid",
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowEditableSettlementSetGrid_Stub,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowEditableSettlementSetGrid_CanInvoke,
-                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowEditableSettlementSetGrid_InvokeMethod);
-                private static void _ShowEditableSettlementSetGrid_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                    ShowRedactSex = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowRedactSex",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSex_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSex_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowRedactSex_InvokeMethod);
+                private static void _ShowRedactSex_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
                 {
-                    c(d, ref d._ShowEditableSettlementSetGridMethod, sf);
+                    c(d, ref d._ShowRedactSexMethod, sf);
                 }
-                private static global::System.Exception _ShowEditableSettlementSetGrid_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                private static global::System.Exception _ShowRedactSex_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
                 {
                     bool result = true;
-                    d.Application.EditableSettlementSetGrid_CanRun(ref result);
+                    d.Application.RedactSex_CanRun(ref result);
                     return result ? null : ex;
                 }
-                private static void _ShowEditableSettlementSetGrid_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                private static void _ShowRedactSex_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
                 {
                     bool handled = false;
-                    d.Application.EditableSettlementSetGrid_Run(ref handled);
+                    d.Application.RedactSex_Run(ref handled);
                     if (!handled)
                     {
-                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:EditableSettlementSetGrid", () => global::LightSwitchApplication.EditableSettlementSetGrid.CreateInstance(), args);
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:RedactSex", () => global::LightSwitchApplication.RedactSex.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowSearchClientSet = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowSearchClientSet",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchClientSet_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchClientSet_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchClientSet_InvokeMethod);
+                private static void _ShowSearchClientSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowSearchClientSetMethod, sf);
+                }
+                private static global::System.Exception _ShowSearchClientSet_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.SearchClientSet_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowSearchClientSet_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.SearchClientSet_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:SearchClientSet", () => global::LightSwitchApplication.SearchClientSet.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowSearchRoomSet = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowSearchRoomSet",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchRoomSet_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchRoomSet_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchRoomSet_InvokeMethod);
+                private static void _ShowSearchRoomSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowSearchRoomSetMethod, sf);
+                }
+                private static global::System.Exception _ShowSearchRoomSet_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.SearchRoomSet_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowSearchRoomSet_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.SearchRoomSet_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:SearchRoomSet", () => global::LightSwitchApplication.SearchRoomSet.CreateInstance(), args);
+                    }
+                }
+ 
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry
+                    ShowSearchSettlementSet = new global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Entry(
+                        "ShowSearchSettlementSet",
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchSettlementSet_Stub,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchSettlementSet_CanInvoke,
+                        global::LightSwitchApplication.Application.DetailsClass.MethodSetProperties._ShowSearchSettlementSet_InvokeMethod);
+                private static void _ShowSearchSettlementSet_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Application.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data> c, global::LightSwitchApplication.Application.DetailsClass d, object sf)
+                {
+                    c(d, ref d._ShowSearchSettlementSetMethod, sf);
+                }
+                private static global::System.Exception _ShowSearchSettlementSet_CanInvoke(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args, global::System.Exception ex)
+                {
+                    bool result = true;
+                    d.Application.SearchSettlementSet_CanRun(ref result);
+                    return result ? null : ex;
+                }
+                private static void _ShowSearchSettlementSet_InvokeMethod(global::LightSwitchApplication.Application.DetailsClass d, global::System.Collections.ObjectModel.ReadOnlyCollection<object> args)
+                {
+                    bool handled = false;
+                    d.Application.SearchSettlementSet_Run(ref handled);
+                    if (!handled)
+                    {
+                        d.ShowScreen("LightSwitchApplication.LightSwitchLab.DesktopClient:SearchSettlementSet", () => global::LightSwitchApplication.SearchSettlementSet.CreateInstance(), args);
                     }
                 }
  
@@ -1103,53 +1103,53 @@ namespace LightSwitchApplication
  
             }
 
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactClientMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSexMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomTypeMethod;
-
             private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowClientDetailMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchClientSetMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchSettlementSetMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchRoomSetMethod;
 
             private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableQuery1GridMethod;
 
             private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableQuery2GridMethod;
 
-            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSettlementMethod;
-
             private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableSettlementSetGridMethod;
 
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactClientMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomTypeMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSettlementMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSexMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchClientSetMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchRoomSetMethod;
+
+            private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchSettlementSetMethod;
+
             private global::Microsoft.LightSwitch.Details.Framework.ApplicationMethod<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSettlementSetListDetailMethod;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactClientCommand;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomCommand;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSexCommand;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomTypeCommand;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchClientSetCommand;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchSettlementSetCommand;
-
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchRoomSetCommand;
 
             private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableQuery1GridCommand;
 
             private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableQuery2GridCommand;
 
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableSettlementSetGridCommand;
+
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactClientCommand;
+
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomCommand;
+
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactRoomTypeCommand;
+
             private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSettlementCommand;
 
-            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowEditableSettlementSetGridCommand;
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowRedactSexCommand;
+
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchClientSetCommand;
+
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchRoomSetCommand;
+
+            private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSearchSettlementSetCommand;
 
             private global::Microsoft.LightSwitch.Details.Framework.Base.ApplicationCommand<global::LightSwitchApplication.Application, global::LightSwitchApplication.Application.DetailsClass>.Data _ShowSettlementSetListDetailCommand;
 

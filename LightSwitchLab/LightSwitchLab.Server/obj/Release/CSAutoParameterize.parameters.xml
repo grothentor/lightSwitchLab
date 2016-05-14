@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="_IntrinsicData-Web.config Connection String" description="_IntrinsicData Строка подключения в web.config, используемая приложением для доступа к базе данных." defaultValue="Data Source=|SqlExpressInstanceName|;AttachDbFilename=|ApplicationDatabasePath|;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Study\\Programming\\Projects\\LightSwitchLab\\LightSwitchLab\\LightSwitchLab\.Server\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='_IntrinsicData']/@connectionString" />
+  </parameter>
+</parameters>

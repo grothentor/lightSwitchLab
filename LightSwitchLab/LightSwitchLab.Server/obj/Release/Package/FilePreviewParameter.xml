@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="LightSwitchLab" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Study\\Programming\\Projects\\LightSwitchLab\\LightSwitchLab\\LightSwitchLab\.Server\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Study\\Programming\\Projects\\LightSwitchLab\\LightSwitchLab\\LightSwitchLab\.Server\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="_IntrinsicData-Web.config Connection String" description="" value="Data Source=|SqlExpressInstanceName|;AttachDbFilename=|ApplicationDatabasePath|;Integrated Security=True;Connect Timeout=30;MultipleActiveResultSets=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Study\\Programming\\Projects\\LightSwitchLab\\LightSwitchLab\\LightSwitchLab\.Server\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='_IntrinsicData']/@connectionString" />
+  </parameter>
+</parameters>
