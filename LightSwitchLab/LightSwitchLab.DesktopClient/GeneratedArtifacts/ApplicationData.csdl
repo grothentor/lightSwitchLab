@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NofBeds" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Cost" Type="Edm.Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Room_RoomType" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="RoomType" Relationship="LightSwitchApplication.Room_RoomType" ToRole="RoomType" FromRole="Room" />
+    <NavigationProperty Name="SettlementCollection" Relationship="LightSwitchApplication.Settlement_Room" ToRole="Settlement" FromRole="Room" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="S_Name" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Passport" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Phone" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Adress" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Birthday" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Client_Sex" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="IdSex" Relationship="LightSwitchApplication.Client_Sex" ToRole="Sex" FromRole="Client" />
+    <NavigationProperty Name="SettlementCollection" Relationship="LightSwitchApplication.Settlement_Client" ToRole="Settlement" FromRole="Client" />
+  </EntityType>
+  <EntityType Name="Settlement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Joined" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Eviction" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Settlement_Client" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Settlement_Room" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="IdClient" Relationship="LightSwitchApplication.Settlement_Client" ToRole="Client" FromRole="Settlement" />
+    <NavigationProperty Name="IdRoom" Relationship="LightSwitchApplication.Settlement_Room" ToRole="Room" FromRole="Settlement" />
+  </EntityType>
+  <EntityType Name="Sex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="ClientCollection" Relationship="LightSwitchApplication.Client_Sex" ToRole="Client" FromRole="Sex" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="RoomCollection" Relationship="LightSwitchApplication.Room_RoomType" ToRole="Room" FromRole="RoomType" />
+  </EntityType>
+  <Association Name="Client_Sex">
+    <End Role="Sex" Type="LightSwitchApplication.Sex" Multiplicity="1" />
+    <End Role="Client" Type="LightSwitchApplication.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sex">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="Client_Sex" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Room_RoomType">
+    <End Role="RoomType" Type="LightSwitchApplication.RoomType" Multiplicity="1" />
+    <End Role="Room" Type="LightSwitchApplication.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="Room_RoomType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Settlement_Client">
+    <End Role="Client" Type="LightSwitchApplication.Client" Multiplicity="1" />
+    <End Role="Settlement" Type="LightSwitchApplication.Settlement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Settlement">
+        <PropertyRef Name="Settlement_Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Settlement_Room">
+    <End Role="Room" Type="LightSwitchApplication.Room" Multiplicity="1" />
+    <End Role="Settlement" Type="LightSwitchApplication.Settlement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Settlement">
+        <PropertyRef Name="Settlement_Room" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApplicationData" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="RoomSet" EntityType="LightSwitchApplication.Room" />
+    <EntitySet Name="ClientSet" EntityType="LightSwitchApplication.Client" />
+    <EntitySet Name="SettlementSet" EntityType="LightSwitchApplication.Settlement" />
+    <EntitySet Name="SexSet" EntityType="LightSwitchApplication.Sex" />
+    <EntitySet Name="RoomTypeSet" EntityType="LightSwitchApplication.RoomType" />
+    <AssociationSet Name="Client_Sex" Association="LightSwitchApplication.Client_Sex">
+      <End Role="Sex" EntitySet="SexSet" />
+      <End Role="Client" EntitySet="ClientSet" />
+    </AssociationSet>
+    <AssociationSet Name="Room_RoomType" Association="LightSwitchApplication.Room_RoomType">
+      <End Role="RoomType" EntitySet="RoomTypeSet" />
+      <End Role="Room" EntitySet="RoomSet" />
+    </AssociationSet>
+    <AssociationSet Name="Settlement_Client" Association="LightSwitchApplication.Settlement_Client">
+      <End Role="Client" EntitySet="ClientSet" />
+      <End Role="Settlement" EntitySet="SettlementSet" />
+    </AssociationSet>
+    <AssociationSet Name="Settlement_Room" Association="LightSwitchApplication.Settlement_Room">
+      <End Role="Room" EntitySet="RoomSet" />
+      <End Role="Settlement" EntitySet="SettlementSet" />
+    </AssociationSet>
+    <FunctionImport Name="Query1" ReturnType="Collection(LightSwitchApplication.Client)" EntitySet="ClientSet" m:HttpMethod="GET">
+      <Parameter Name="SexId" Type="Edm.Int32" Mode="In" />
+    </FunctionImport>
+    <FunctionImport Name="Query2" ReturnType="Collection(LightSwitchApplication.Settlement)" EntitySet="SettlementSet" m:HttpMethod="GET">
+      <Parameter Name="IdRoomType" Type="Edm.Int32" Mode="In" />
+    </FunctionImport>
+    <FunctionImport Name="Microsoft_LightSwitch_GetCanInformation" ReturnType="Edm.String" m:HttpMethod="GET">
+      <Parameter Name="dataServiceMembers" Type="Edm.String" Mode="In" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

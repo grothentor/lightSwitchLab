@@ -1,0 +1,9 @@
+LightSwitchLab.Server.Properties.Service.lsml
+LightSwitchLab.Server.Properties.DataSources.ApplicationData.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.RoomSet.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.ClientSet.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.SettlementSet.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.SexSet.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.RoomTypeSet.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.Query1.lsml
+LightSwitchLab.Server.DataSources.ApplicationData.Query2.lsml

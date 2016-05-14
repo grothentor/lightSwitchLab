@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Properties\ApplicationData\ClientSet.lsml" Checksum="4C5BE03E156324F7F898115E35CA7139912CDF4153E689382051CB484392FD88" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Properties\Client.lsml" Checksum="FD04CB10ACD48268AA891069BFE543BA53B475171AD871A5DF27C1D33EEABEF6" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Properties\Proxies.lsml" Checksum="B3CA5B5A4A51F78680AC090BB0AB5942309C0E3FF52FF6C3880661EE58D7012C" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\ClientDetail.lsml" Checksum="4679622A97FCFF467A1CA9D351F6B8356760A5F79623978E073C96AAA57DB376" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\EditableQuery1Grid.lsml" Checksum="A2BB9D7E9319F03A0A37215621AADFF4920E85A6337E5071CC294498EA2BEED3" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\EditableQuery2Grid.lsml" Checksum="1868663E2B405E637F359F828E4FAA2AB84F4A8C8F06C9294BBDAE39E7646725" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\EditableSettlementSetGrid.lsml" Checksum="176190768EFBEBE9C7EAD15DEC32E6FA8AD8B2B04DB9CB4865AFC2E755D61E1E" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\RedactClient.lsml" Checksum="60A36A119B51050E4EB58A2361DB0AF758F0A6FBEEC76640BCBB7D357FA19614" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\RedactRoom.lsml" Checksum="0B4CC07D71815D1280FAE7137CD4623206904D9D453075FD13490E1D7793687A" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\RedactRoomType.lsml" Checksum="AC4868F9F4C0DEDFB5B3A9E1426FDB8B9B511DC4B956ACD42F0B22B6B32C9851" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\RedactSettlement.lsml" Checksum="1E4C40F57E50B7F75DF3B6FC3F7B37236E29148CA7E471E737E13CB43CB59027" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\RedactSex.lsml" Checksum="EE25F573ECA7DFB76F874F8413BB17D83C1F628F2EA7F80AD34E298B8DA29C7B" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\SearchClientSet.lsml" Checksum="23C37A9085F35D9AEB09C515076077416372CF6131168BA478F8A23B1B9100F5" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\SearchRoomSet.lsml" Checksum="47400B11EA1383667C32C1A445507807CC027F799B2A908B6763CEEE884FA073" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\SearchSettlementSet.lsml" Checksum="0881511E5011381B1B3EC43CEFBB8362E7018C6F87E522511DFBABF592F7A06D" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.DesktopClient\Screens\SettlementSetListDetail.lsml" Checksum="BD6CE82AF9D09EF96E11AB648C418C86D8CA90252C0890C37F3E8984FF1CD2B0" />
+  </Documents>
+</ModelDocumentManifest>

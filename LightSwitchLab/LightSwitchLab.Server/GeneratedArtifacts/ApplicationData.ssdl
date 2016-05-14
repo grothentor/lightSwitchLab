@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="RoomSet" EntityType="ApplicationDataStore.Room" store:Type="Tables" Schema="dbo" Table="RoomSet" />
+    <EntitySet Name="ClientSet" EntityType="ApplicationDataStore.Client" store:Type="Tables" Schema="dbo" Table="ClientSet" />
+    <EntitySet Name="SettlementSet" EntityType="ApplicationDataStore.Settlement" store:Type="Tables" Schema="dbo" Table="SettlementSet" />
+    <EntitySet Name="SexSet" EntityType="ApplicationDataStore.Sex" store:Type="Tables" Schema="dbo" Table="SexSet" />
+    <EntitySet Name="RoomTypeSet" EntityType="ApplicationDataStore.RoomType" store:Type="Tables" Schema="dbo" Table="RoomTypeSet" />
+    <AssociationSet Name="Client_Sex" Association="ApplicationDataStore.Client_Sex">
+      <End Role="Sex" EntitySet="SexSet" />
+      <End Role="Client" EntitySet="ClientSet" />
+    </AssociationSet>
+    <AssociationSet Name="Room_RoomType" Association="ApplicationDataStore.Room_RoomType">
+      <End Role="RoomType" EntitySet="RoomTypeSet" />
+      <End Role="Room" EntitySet="RoomSet" />
+    </AssociationSet>
+    <AssociationSet Name="Settlement_Client" Association="ApplicationDataStore.Settlement_Client">
+      <End Role="Client" EntitySet="ClientSet" />
+      <End Role="Settlement" EntitySet="SettlementSet" />
+    </AssociationSet>
+    <AssociationSet Name="Settlement_Room" Association="ApplicationDataStore.Settlement_Room">
+      <End Role="Room" EntitySet="RoomSet" />
+      <End Role="Settlement" EntitySet="SettlementSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NofBeds" Type="int" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Room_RoomType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="S_Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Passport" Type="nvarchar" Nullable="false" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Adress" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Birthday" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Client_Sex" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Settlement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Joined" Type="datetime" Nullable="false" />
+    <Property Name="Eviction" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Settlement_Client" Type="int" Nullable="false" />
+    <Property Name="Settlement_Room" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="RoomType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <Association Name="Client_Sex">
+    <End Role="Sex" Type="ApplicationDataStore.Sex" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Client" Type="ApplicationDataStore.Client" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sex">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Client">
+        <PropertyRef Name="Client_Sex" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Room_RoomType">
+    <End Role="RoomType" Type="ApplicationDataStore.RoomType" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Room" Type="ApplicationDataStore.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="Room_RoomType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Settlement_Client">
+    <End Role="Client" Type="ApplicationDataStore.Client" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Settlement" Type="ApplicationDataStore.Settlement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Settlement">
+        <PropertyRef Name="Settlement_Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Settlement_Room">
+    <End Role="Room" Type="ApplicationDataStore.Room" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Settlement" Type="ApplicationDataStore.Settlement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Settlement">
+        <PropertyRef Name="Settlement_Room" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\ClientSet.lsml" Checksum="C4A54F13AC62C9FAD99D4119A617D2A844A775DE6AF2AF9C916C7CE83D0DFA25" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\Query1.lsml" Checksum="548545606C76FF756D28F285A14D3875B2E11507F2836E657B9E9F43104D5332" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\RoomSet.lsml" Checksum="501442F980F5C311B02F43EFE01873C512A66CD5BDAF9A4EC918E8C6F8F07179" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\RoomTypeSet.lsml" Checksum="B941BB414B00EFA136E7EA28851E83F8B3055014184B2FC86144CC27EC4E7C44" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\SettlementSet.lsml" Checksum="655293284D57A6B81EBF4E1E8049E62EB5654EED4AC9EAF75EB488C2AB740B6E" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\Query2.lsml" Checksum="47D3B29CA91D759A6D4C927F56F080A0BA05F3614D8BDADFE487EEF52CD196F6" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\DataSources\ApplicationData\SexSet.lsml" Checksum="E38A4396839813E8B50B73B760EC6B640763A84099EBF4B40EDC31B7DE757CA2" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\Properties\DataSources\ApplicationData.lsml" Checksum="4269B7A1C607D3AEA1D34BA816EE24BE223A014F83A97F863157835AA09C6154" />
+    <Document FullPath="D:\Study\Programming\Projects\LightSwitchLab\LightSwitchLab\LightSwitchLab.Server\Properties\Service.lsml" Checksum="7314235CB84B19C5CA4CAD6ECF4E7CE37D675F5A21EEC0F8785409C3A653A132" />
+  </Documents>
+</ModelDocumentManifest>
